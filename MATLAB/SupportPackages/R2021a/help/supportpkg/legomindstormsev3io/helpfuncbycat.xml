@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="read-and-write-data.html">Read and Write Data
+<tocitem target="ref/writelcd.html">
+<name>writeLCD</name>
+<purpose>Write characters to LCD on EV3 brick</purpose>
+</tocitem>
+<tocitem target="ref/clearlcd.html">
+<name>clearLCD</name>
+<purpose>Clear characters from LCD on EV3 brick</purpose>
+</tocitem>
+<tocitem target="ref/playtone.html">
+<name>playTone</name>
+<purpose>Play tones from speaker on EV3 brick</purpose>
+</tocitem>
+<tocitem target="ref/beep.html">
+<name>beep</name>
+<purpose>Play beep from speaker on EV3 brick</purpose>
+</tocitem>
+<tocitem target="ref/readbutton.html">
+<name>readButton</name>
+<purpose>Read whether button on EV3 brick is being pressed</purpose>
+</tocitem>
+<tocitem target="ref/writestatuslight.html">
+<name>writeStatusLight</name>
+<purpose>Control color and mode of status light on EV3 brick</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="color-sensors.html">Color Sensors
+<tocitem target="ref/readcolor.html">
+<name>readColor</name>
+<purpose>Read color of object in front of color sensor</purpose>
+</tocitem>
+<tocitem target="ref/readlightintensity.html">
+<name>readLightIntensity</name>
+<purpose>Read intensity of light that reaches color sensor</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="touch-sensors-1.html">Gyro Sensors
+<tocitem target="ref/readrotationangle.html">
+<name>readRotationAngle</name>
+<purpose>Read rotation angle from gyroscopic sensor</purpose>
+</tocitem>
+<tocitem target="ref/readrotationrate.html">
+<name>readRotationRate</name>
+<purpose>Read rotation rate from gyroscopic sensor</purpose>
+</tocitem>
+<tocitem target="ref/resetrotationangle.html">
+<name>resetRotationAngle</name>
+<purpose>Reset rotation angle to zero</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="ir-sensors.html">IR Sensors
+<tocitem target="ref/readproximity.html">
+<name>readProximity</name>
+<purpose>Read distance from infrared sensor to object</purpose>
+</tocitem>
+<tocitem target="ref/readbeaconproximity.html">
+<name>readBeaconProximity</name>
+<purpose>Read distance and heading from infrared sensor to beacon</purpose>
+</tocitem>
+<tocitem target="ref/readbeaconbutton.html">
+<name>readBeaconButton</name>
+<purpose>Read number of pressed button on infrared beacon</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="motors.html">Motors
+<tocitem target="ref/readrotation.html">
+<name>readRotation</name>
+<purpose>Read rotation from motor</purpose>
+</tocitem>
+<tocitem target="ref/resetrotation.html">
+<name>resetRotation</name>
+<purpose>Reset rotation count to zero</purpose>
+</tocitem>
+<tocitem target="ref/start.html">
+<name>start</name>
+<purpose>Start motor</purpose>
+</tocitem>
+<tocitem target="ref/stop.html">
+<name>stop</name>
+<purpose>Stop motor</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="touch-sensors-3.html">Sonic Sensors
+<tocitem target="ref/readdistance.html">
+<name>readDistance</name>
+<purpose>Read distance from ultrasonic sensor to object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="touch-sensors.html">Touch Sensors
+<tocitem target="ref/readtouch.html">
+<name>readTouch</name>
+<purpose>Read touch sensor value</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

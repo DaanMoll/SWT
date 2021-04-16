@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--Copyright 2014-2020 The MathWorks, Inc. -->
+<RTTPackageRepository>
+    <SupportPackage 
+        name="LEGO MINDSTORMS EV3 I/O" 
+        fullname="MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware"
+        displayname="LEGO MINDSTORMS"
+        infotext="Acquire sensor data and control outputs on LEGO MINDSTORMS EV3"
+        version="21.1.0" 
+        platform="PCWIN64,GLNXA64,MACI64"
+        visible="1"
+        enable="1"
+        baseproduct="MATLAB"
+        basecode="ML_LEGO_EV3"
+        url="http://www.mathworks.com" 
+        downloadurl="" 
+        licenseurl=""
+        urlcatalog="ev3io_urlcatalog.xml"
+        folder="ev3io"
+        demoxml="ev3io_examples/demos.xml">
+        <Path name="$(INSTALLDIR)/ev3io"></Path>
+        <Path name="$(INSTALLDIR)/ev3io/ev3io_examples"></Path>
+    </SupportPackage>
+</RTTPackageRepository>

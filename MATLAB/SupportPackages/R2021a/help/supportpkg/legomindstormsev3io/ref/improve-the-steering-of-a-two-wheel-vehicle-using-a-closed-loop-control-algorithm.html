@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<meta xmlns="http://www.w3.org/1999/xhtml" charset="utf-8">
+<meta xmlns="http://www.w3.org/1999/xhtml" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Improve the Steering of a Two-Wheel Vehicle Using a Closed-Loop Control Algorithm</title>
+<script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+      {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement":
+      [{
+          "@type": "ListItem",
+          "position": 1,
+
+          "item": {
+          "@id": "../index.html",
+          "name": "MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware"
+}
+
+          } 
+        ,
+        {
+          "@type": "ListItem",
+          "position": 2,
+
+          "item": {
+          "@id": "../motors.html",
+          "name": "Motors"
+}
+
+          }]
+      }</script><script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+          "name": "VisibleBreadcrumbs",
+
+        "itemListElement":
+        [
+        "motors"
+        ],
+        "itemListOrder": "http://schema.org/ItemListOrderAscending"
+        }
+        </script><script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "DigitalDocument",
+          "headline": "Improve the Steering of a Two-Wheel Vehicle Using a Closed-Loop Control Algorithm",
+          "description": "Implement a closed-loop control algorithm to make a two-wheel LEGO&#174; MINDSTORMS&#174; EV3&#8482; vehicle drive straighter.",
+          "thumbnailURL": "../includes/product/images/doc_center/DefaultImage.png",
+          "genre": "Script",
+          "isBasedOn": {
+          "@type": "Product",
+          "name": "MATLAB"
+
+        },
+          "identifier": "legomindstormsev3io.ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample",
+          "name": "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample",
+          "url": "improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html"
+
+        }</script><script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "PropertyValue",
+          "name": "open_command",
+          "value": "matlab:openExample('legomindstormsev3io/ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample')"
+
+        }</script><script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+          "name": "ExampleSourceFiles",
+
+        "itemListElement":
+        [
+        "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample.m"
+        ],
+        "itemListOrder": "http://schema.org/ItemListOrderAscending"
+        }
+        </script><link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+
+  <meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="Content-Script-Type" content="text/javascript">
+<meta xmlns="http://www.w3.org/1999/xhtml" name="toctype" itemprop="pagetype" content="fe">
+<meta xmlns="http://www.w3.org/1999/xhtml" name="infotype" itemprop="infotype" content="ex">
+
+<meta xmlns="http://www.w3.org/1999/xhtml" name="description" itemprop="description" content="This example shows how to implement a closed-loop control algorithm to make a two-wheel LEGO&#174; MINDSTORMS&#174; EV3&#8482; vehicle drive straighter."><meta xmlns="http://www.w3.org/1999/xhtml" content="../includes/product/images/doc_center/DefaultImage.png" itemprop="thumbnailUrl">
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/jquery/jquery-latest.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6.css" rel="stylesheet" type="text/css">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_offcanvas_v2.css" rel="stylesheet" type="text/css">
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/l10n.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/f1help.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/mw.imageanimation.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/jquery.highlight.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/underscore-min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/use_platform_screenshots.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/suggest.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/overload.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/helpservices.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/productfilter.js"></script>
+
+
+
+
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/jquery/jquery.mobile.custom.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/bootstrap.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/global.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/doc_center_base.css" rel="stylesheet" type="text/css">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/doc_center_installed.css" rel="stylesheet" type="text/css">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/equationrenderer/release/MathRenderer.js"></script>
+</head>
+<body id="responsive_offcanvas">
+<div xmlns="http://www.w3.org/1999/xhtml" id="doc_header_spacer" class="header"></div>
+<div xmlns="http://www.w3.org/1999/xhtml" class="section_header level_3"><div class="container-fluid"><div class="row" id="mobile_search_row"><div class="col-sm-6 col-md-7 has_horizontal_local_nav" id="section_header_title"><div class="section_header_content"><div class="section_header_title"><h1><a href="../../../documentation-center.html">Documentation</a></h1></div></div></div><div class="col-xs-12 col-sm-6 col-md-5" id="mobile_search"><div class="search_nested_content_container"><form id="docsearch_form" name="docsearch_form" method="get" data-release="R2021a" data-language="en" action="../../../templates/searchresults.html"><div class="input-group tokenized_search_field"><label class="sr-only">Search Help</label><input type="text" class="form-control conjoined_search" autocomplete="off" name="qdoc" placeholder="Search Help" id="docsearch"> <div class="input-group-btn"><button type="submit" name="submitsearch" id="submitsearch" class="btn icon-search btn_search_adjacent btn_search icon_16" tabindex="-1"></button></div></div></form></div><button class="btn icon-remove btn_search pull-right icon_32 visible-xs" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div><div class="visible-xs" id="search_actuator"><button class="btn icon-search btn_search pull-right icon_16" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div></div></div></div><div class="row-offcanvas row-offcanvas-left">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sidebar-offcanvas" id="sidebar">
+<nav class="offcanvas_nav" role="navigation">
+<div class="offcanvas_actuator" data-toggle="offcanvas" data-target="#sidebar" id="nav_toggle"><button type="button" class="btn"><span class="sr-only">Off-Canvas Navigation Menu Toggle
+                  Off-Canvas Navigation Menu Toggle</span><span class="icon-menu"></span></button><span class="offcanvas_actuator_label" id="translation_icon-menu" tabindex="-1" aria-hidden="true"></span></div><div class="nav_list_wrapper" id="nav_list_wrapper"><nav class="offcanvas_nav" role="navigation"><ul class="nav_breadcrumb" id="ul_left_nav_ancestors"><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../../../documentation-center.html?s_tid=CRUX_lftnav" itemprop="url"><span itemprop="title">Documentation Home</span></a></li></ul>
+<ul class="nav_disambiguation"><li><a href="../index.html?s_tid=CRUX_lftnav">MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware</a>
+</li>
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../motors.html?s_tid=CRUX_lftnav" itemprop="url"><span itemprop="title">Motors</span></a></li></ul><ul class="nav_scrollspy nav">
+<li class="nav_scrollspy_function"><a href="#responsive_offcanvas">Improve the Steering of a Two-Wheel Vehicle Using a Closed-Loop Control Algorithm</a></li>
+<li class="nav_scrollspy_title" id="SSPY810-section">On this page</li>
+<!--ADD_REFENTRY_TITLE_HERE 11--><li><a href="#d123e5795" class="intrnllnk">Introduction</a></li><li><a href="#d123e5802" class="intrnllnk">Prerequisites</a></li><li><a href="#d123e5812" class="intrnllnk">Required Hardware</a></li><li><a href="#d123e5820" class="intrnllnk">Task 1 - Set Up Hardware</a></li><li><a href="#d123e5837" class="intrnllnk">Task 2 - Open and Run Open-Loop Control MATLAB Script</a></li><li><a href="#d123e5859" class="intrnllnk">Task 3 - Open and Run Close-Loop Control MATLAB Script</a></li><li><a href="#d123e5881" class="intrnllnk">Task 4 - Other Things to Try</a></li><li><a href="#d123e5895" class="intrnllnk">Summary</a></li></ul>
+</nav></div></nav>
+<script src="../includes/product/scripts/offcanvas_v2.js"></script></div><!--END.CLASS sidebar-offcanvas-->
+<div class="offcanvas_content_container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sticky_header_container"><div class="horizontal_nav"><div class="horizontal_nav_container"><div class="offcanvas_horizontal_nav"><div class="container-fluid"><div class="row"><div class="col-sm-12 hidden-xs"><nav class="navbar navbar-default" role="navigation" id="subnav"><div><ul class="nav navbar-nav crux_browse"><li id="crux_nav_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_example" class="crux_resource"><a href="../examples.html?category=motors&amp;s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;category=motors&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></nav></div><div class="visible-xs"><div class="container-fluid"><div class="row"><div class="col-xs-9"><div class="mobile_crux_nav_trigger"><div class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources<span class="icon-arrow-down icon_16"></span></button><ul class="dropdown-menu"><li id="crux_nav_mobile_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_mobile_example" class="crux_resource"><a href="../examples.html?category=motors&amp;s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_mobile_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;category=motors&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></div></div><div class="col-xs-3"><div class="translate_placeholder"></div></div></div></div></div></div></div></div></div></div></div><div class="content_container" id="content_container" itemprop="content">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+
+<section xmlns="http://www.w3.org/1999/xhtml" id="doc_center_content" lang="en" data-language="en"><div id="pgtype-example">
+<section itemprop="content"><div class="example_icon"></div><h1 class="r2021a" itemprop="title content" id="example-ev3io_gostraight">Improve the Steering of a Two-Wheel Vehicle Using a Closed-Loop Control Algorithm</h1><div class="pull-right examples_short_list" style="width:250px; margin-left: 10px; margin-bottom: 10px;"><div data-pane="metadata" style="margin-bottom: 0px;" class="panel metadata_container"><div class="panel-body metadata_content" style="padding-top:0px; padding-bottom:0px;"><div class="row"><div class="col-xs-12"><a class="btn btn_secondary btn-block" href="matlab:openExample('legomindstormsev3io/ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample')">Open Script</a></div></div></div></div></div><div itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/Example" itemprop="example" class="em_example"><meta itemprop="exampleid" content="legomindstormsev3io-ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample"><meta itemprop="exampletitle" content="Improve the Steering of a TwoWheel Vehicle Using a ClosedLoop Control Algorithm"></div><span id="ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample" class="anchor_target"></span>
+
+<p class="shortdesc">This example shows how to implement a closed-loop control algorithm to make a two-wheel LEGO&#174; MINDSTORMS&#174; EV3&#8482; vehicle drive straighter.</p>
+
+<div class="procedure"><h3 class="title" id="d123e5795">Introduction<span id="ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-1" class="anchor_target"></span></h3><p>In a vehicle using independent wheel control, applying the same power to each wheel generally does not result in the vehicle moving straight. This is caused by mechanical and surface differences experienced by each of the wheels. To reduce deviation in the vehicle heading, a better approach is to use a closed-loop controller which adjusts the power applied to two motors based on difference in their rotations. One such controller is a well-known proportional-integral-derivative (PID) controller.</p><p>PID control is a basic control loop feedback mechanism. The controller minimizes the difference between the measured and the desired value of a chosen system variable by adjusting the system control inputs.</p><p>This example demonstrates the control algorithm implementations,  first with no feedback control (Open-Loop Control), and then with feedback control (Closed-Loop Control) based on P controller.</p><h3 class="title" id="d123e5802">Prerequisites<span id="ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-2" class="anchor_target"></span></h3><p>Complete both <a href="getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html" class="a">Getting Started with MATLAB&#174; Support Package for LEGO&#174; MINDSTORMS&#174; EV3&#8482; Hardware</a> and <a href="interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html" class="a">Interact with EV3 Brick Peripherals, Read Sensor Values, and Control Motors</a> examples.</p><h3 class="title" id="d123e5812">Required Hardware<span id="ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-3" class="anchor_target"></span></h3><p>This example requires extra hardware:</p><div class="itemizedlist"><ul><li><p>Two EV3 Large Motors</p></li></ul></div><h3 class="title" id="d123e5820">Task 1 - Set Up Hardware<span id="ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-4" class="anchor_target"></span></h3><p>1. Build a vehicle using two motors to control two independent wheels. Connect one motor to output port <strong class="emphasis bold">'A'</strong> and the other to output port <strong class="emphasis bold">'B'</strong>. For example, you can build a vehicle similar to the one described in the printed building instructions in the education core set.</p><p>2. Communicating with a moving vehicle is easier with a wireless connection than with a USB cable. Therefore, we recommend setting up WiFi or Bluetooth communications, as described in <strong class="emphasis bold">Getting Started with MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware</strong> example.</p><h3 class="title" id="d123e5837">Task 2 - Open and Run Open-Loop Control MATLAB Script<span id="ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-5" class="anchor_target"></span></h3><p><strong class="emphasis bold">1. Open the open-loop control script template.</strong></p><div class="code_responsive"><pre class="programlisting">edit('gostraight_openloop.m')</pre></div><p>The code sets two motors to same speed and leave them unchanged during execution.</p><p><strong class="emphasis bold">2. Run script.</strong></p><p>Click <strong class="emphasis bold">Run</strong> button to run the open-loop control script. The execution time is 10 seconds defined in</p><div class="code_responsive"><pre class="programlisting">EXE_TIME = 10</pre></div><p><strong class="emphasis bold">3. Observe deviation with the open-loop system.</strong></p><p>The script specifies the same speed for both wheels. However, mechanical and environmental conditions make the wheels to rotate at different speeds, causing the vehicle to deviate from a straight path.</p><h3 class="title" id="d123e5859">Task 3 - Open and Run Close-Loop Control MATLAB Script<span id="ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-6" class="anchor_target"></span></h3><p><strong class="emphasis bold">1. Open the close-loop control script template.</strong></p><div class="code_responsive"><pre class="programlisting">edit('gostraight_closeloop.m')</pre></div><p>The code reads the encoders in each wheel, calculates the proportional difference between the rotation speeds of each wheel, and compensates for that difference by adjusting the speed of one motor.</p><p><strong class="emphasis bold">2. Run script.</strong></p><p>Click <strong class="emphasis bold">Run</strong> button to run the close-loop control script. The execution time is 10 seconds defined in</p><div class="code_responsive"><pre class="programlisting">EXE_TIME = 10</pre></div><p><strong class="emphasis bold">3. Observe the deviation with a closed-loop system.</strong></p><p>Observe that, with the closed-loop feedback control system, the vehicle moves straighter than when it was using the open-loop control.</p><h3 class="title" id="d123e5881">Task 4 - Other Things to Try<span id="ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-7" class="anchor_target"></span></h3><p><strong class="emphasis bold">1.</strong> Change the initial speed setting and adjust the P parameter accordingly</p><div class="code_responsive"><pre class="programlisting">SPEED = 20
+P = 0.01</pre></div><p>to make vehicle move straight.</p><p><strong class="emphasis bold">2.</strong> Refine the control algorithm with integral and derivative parameters.</p><h3 class="title" id="d123e5895">Summary<span id="ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-8" class="anchor_target"></span></h3><p>This example demonstrate the implementation of motor control for two-wheel EV3 vehicle. You learned that:</p><div class="itemizedlist"><ul><li><p>Open-loop control does not ensure straight driving in a vehicle with independently-powered wheels.</p></li><li><p>Closed-loop control uses the difference between two encoder outputs to synchronize the rotation speed of the two wheels.</p></li></ul></div></div></section>
+    </div>
+<div class="modal fade" id="open-example-dialog" tabindex="-1" role="dialog" aria-labelledby="openExampleDialogLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h2 class="h3 modal-title">Open Example</h2></div><div class="modal-body" id="dialog-body"><p>You have a modified version of this example. Do you want to open this example with your edits?</p></div><div class="modal-footer"><a id="open-example-dialog-replace" class="btn btn_color_blue companion_btn" data-dismiss="modal">No, open this example and discard my edits</a><a id="open-example-dialog-continue" class="btn btn_color_blue" data-dismiss="modal">Yes</a></div></div></div></div>
+<div class="clearfix"></div>
+<div align="center" class="feedbackblock"><iframe id="doc_survey"></iframe></div><script src="../includes/shared/scripts/docsurvey.js"></script>
+
+<script>initDocSurvey();</script></section>
+
+
+</div>
+</div>
+</div>
+</div><!--close_0960-->
+<div xmlns="http://www.w3.org/1999/xhtml" class="body_trail_container">
+<section><div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div class="row"><div class="col-xs-12 col-sm-4"><h2><a href="../index.html?s_cid=doc_ftr">MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware Documentation</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="../examples.html?s_cid=doc_ftr">Examples</a></li>
+<li><a href="../referencelist.html?type=function&amp;s_cid=doc_ftr">Functions</a></li>
+<li><a href="../release-notes.html?s_cid=doc_ftr">Release Notes</a></li>
+<li><a href="https://www.mathworks.com/help/releases/R2021a/pdf_doc/supportpkg/legomindstormsev3io/index.html?s_cid=doc_ftr">PDF Documentation</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4"><h2><a href="https://www.mathworks.com/support.html?s_cid=doc_ftr">Support</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="https://www.mathworks.com/matlabcentral/answers/index?s_cid=doc_ftr">MATLAB Answers</a></li><li><a href="https://www.mathworks.com/support/install-matlab.html?s_cid=doc_ftr">Installation Help</a></li><li><a href="https://www.mathworks.com/support/bugreports/?s_cid=doc_ftr">Bug Reports</a></li><li><a href="https://www.mathworks.com/support/requirements/product-requirements-platform-availability-list.html?s_cid=doc_ftr">Product Requirements</a></li><li><a href="https://www.mathworks.com/downloads/?s_cid=doc_ftr">Software Downloads</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div><!--END.CLASS container-fluid-->
+</section></div><!--END.CLASS body_trail_container-->
+<footer xmlns="http://www.w3.org/1999/xhtml" id="footer" class="bs-footer">
+<div class="container-fluid">
+<div class="footer">
+<div class="row">
+<div class="col-xs-12">
+<p class="copyright">© 1994-2021 The MathWorks, Inc.</p>
+<ul class="footernav"><li class="footernav_help"><a href="matlab:web(matlab.internal.licenseAgreement)">Terms of Use</a></li><li class="footernav_patents"><a href="matlab:web([matlabroot '/patents.txt'])">Patents</a></li><li class="footernav_trademarks"><a href="matlab:web([matlabroot '/trademarks.txt'])">Trademarks</a></li><li class="footernav_piracy"><a href="matlab:web([docroot '/acknowledgments.html'])">Acknowledgments</a></li></ul></div>
+</div>
+</div>
+</div>
+</footer>
+</div><!--close row-offcanvas-->
+</div><!--close_0970-->
+</body>
+</html>

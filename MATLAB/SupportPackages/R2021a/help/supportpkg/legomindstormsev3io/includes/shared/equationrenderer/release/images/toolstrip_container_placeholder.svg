@@ -1,0 +1,8 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>.tab-bar{fill:#004073;}</style>
+        <style>.panel{fill:#E6E6E6;}</style>
+    </defs>
+    <rect class="tab-bar" width="100%" height="28px"/>
+    <rect class="panel" y="28" width="100%" height="92px"/>
+</svg>

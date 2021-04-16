@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<meta xmlns="http://www.w3.org/1999/xhtml" charset="utf-8">
+<meta xmlns="http://www.w3.org/1999/xhtml" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="X-UA-Compatible" content="IE=edge">
+<title>irSensor</title>
+<script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+      {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement":
+      [{
+          "@type": "ListItem",
+          "position": 1,
+
+          "item": {
+          "@id": "../index.html",
+          "name": "MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware"
+}
+
+          } 
+        ,
+        {
+          "@type": "ListItem",
+          "position": 2,
+
+          "item": {
+          "@id": "../ir-sensors.html",
+          "name": "IR Sensors"
+}
+
+          }]
+      }</script><script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+          "name": "VisibleBreadcrumbs",
+
+        "itemListElement":
+        [
+        "ir-sensors"
+        ],
+        "itemListOrder": "http://schema.org/ItemListOrderAscending"
+        }
+        </script>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="chunktype" content="refpage"><meta xmlns="http://www.w3.org/1999/xhtml" name="refentity" itemprop="refentity" content="object:irSensor"><meta xmlns="http://www.w3.org/1999/xhtml" name="refentity" itemprop="refentity" content="object:irSensor"><link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+
+  <meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="Content-Script-Type" content="text/javascript">
+<meta xmlns="http://www.w3.org/1999/xhtml" name="toctype" itemprop="pagetype" content="ug">
+<meta xmlns="http://www.w3.org/1999/xhtml" name="infotype" itemprop="infotype" content="ref/function">
+
+<meta xmlns="http://www.w3.org/1999/xhtml" name="description" itemprop="description" content="This object represents a connection to an EV3 Infrared Sensor (item number 45509)."><script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/jquery/jquery-latest.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6.css" rel="stylesheet" type="text/css">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/site6_offcanvas_v2.css" rel="stylesheet" type="text/css">
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/l10n.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/f1help.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/mw.imageanimation.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/jquery.highlight.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/underscore-min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/use_platform_screenshots.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/suggest.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/overload.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/scripts/helpservices.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/productfilter.js"></script>
+
+
+
+
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/jquery/jquery.mobile.custom.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/bootstrap.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/product/scripts/global.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/doc_center_base.css" rel="stylesheet" type="text/css">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/doc_center_installed.css" rel="stylesheet" type="text/css">
+<link xmlns="http://www.w3.org/1999/xhtml" href="../includes/product/css/doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+<script xmlns="http://www.w3.org/1999/xhtml" src="../includes/shared/equationrenderer/release/MathRenderer.js"></script>
+</head>
+<body id="responsive_offcanvas">
+<div xmlns="http://www.w3.org/1999/xhtml" id="doc_header_spacer" class="header"></div>
+<div xmlns="http://www.w3.org/1999/xhtml" class="section_header level_3"><div class="container-fluid"><div class="row" id="mobile_search_row"><div class="col-sm-6 col-md-7 has_horizontal_local_nav" id="section_header_title"><div class="section_header_content"><div class="section_header_title"><h1><a href="../../../documentation-center.html">Documentation</a></h1></div></div></div><div class="col-xs-12 col-sm-6 col-md-5" id="mobile_search"><div class="search_nested_content_container"><form id="docsearch_form" name="docsearch_form" method="get" data-release="R2021a" data-language="en" action="../../../templates/searchresults.html"><div class="input-group tokenized_search_field"><label class="sr-only">Search Help</label><input type="text" class="form-control conjoined_search" autocomplete="off" name="qdoc" placeholder="Search Help" id="docsearch"> <div class="input-group-btn"><button type="submit" name="submitsearch" id="submitsearch" class="btn icon-search btn_search_adjacent btn_search icon_16" tabindex="-1"></button></div></div></form></div><button class="btn icon-remove btn_search pull-right icon_32 visible-xs" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div><div class="visible-xs" id="search_actuator"><button class="btn icon-search btn_search pull-right icon_16" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div></div></div></div><div class="row-offcanvas row-offcanvas-left">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sidebar-offcanvas" id="sidebar">
+<nav class="offcanvas_nav" role="navigation">
+<div class="offcanvas_actuator" data-toggle="offcanvas" data-target="#sidebar" id="nav_toggle"><button type="button" class="btn"><span class="sr-only">Off-Canvas Navigation Menu Toggle
+                  Off-Canvas Navigation Menu Toggle</span><span class="icon-menu"></span></button><span class="offcanvas_actuator_label" id="translation_icon-menu" tabindex="-1" aria-hidden="true"></span></div><div class="nav_list_wrapper" id="nav_list_wrapper"><nav class="offcanvas_nav" role="navigation"><ul class="nav_breadcrumb" id="ul_left_nav_ancestors"><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../../../documentation-center.html?s_tid=CRUX_lftnav" itemprop="url"><span itemprop="title">Documentation Home</span></a></li></ul>
+<ul class="nav_disambiguation"><li><a href="../index.html?s_tid=CRUX_lftnav">MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware</a>
+</li>
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../ir-sensors.html?s_tid=CRUX_lftnav" itemprop="url"><span itemprop="title">IR Sensors</span></a></li></ul><ul class="nav_scrollspy nav">
+<li class="nav_scrollspy_function notranslate"><a href="#responsive_offcanvas">irSensor</a></li>
+<li class="nav_scrollspy_title" id="SSPY810-refentry">On this page</li>
+<!--ADD_REFENTRY_TITLE_HERE 11--><li><a href="#d123e2959" class="intrnllnk">Description</a></li><li><a href="#buk6h_g-1" class="intrnllnk">Creation</a><ul class="nav"><li><a href="#mw_d45dd7f9-3032-4990-adab-85c696f8d2ec" class="intrnllnk">Description</a></li></ul><ul class="nav"><li><a href="#mw_5df8c8bc-e8b3-46ae-9f5f-4d18a6455684" class="intrnllnk">Input Arguments</a><ul class="nav"><li><a href="#buk4pp7-1_sep_shared-myev3" class="intrnllnk">myev3</a></li></ul></li></ul><ul class="nav"><li><a href="#mw_97768695-b547-44d4-86d3-8b7f30d44fc1" class="intrnllnk">Output Arguments</a><ul class="nav"><li><a href="#mw_96409107-eea7-4310-a1a3-ba59e68ac73d" class="intrnllnk">myirsensor</a></li></ul></li></ul></li><li><a href="#buk4pp7-4" class="intrnllnk">Properties</a><ul class="nav"><li><a href="#buk4pp7-1-Channel" class="intrnllnk">Channel</a></li><li><a href="#buk4pp7-1_sep_shared-InputPort" class="intrnllnk">InputPort</a></li></ul></li><li><a href="#buk4pp7-5" class="intrnllnk">Object Functions</a></li><li><a href="#mw_af71279f-ce93-428a-89a4-a75682fb1a96" class="intrnllnk">Examples</a><ul class="nav"><li><a href="#buk4pp7-1_sep_buk41fw-2i" class="intrnllnk">Use an Infrared Sensor to Get the Distance and Heading to an
+IR Beacon</a></li></ul></li><li><a href="#buk4pp7-1_seealso" class="intrnllnk">See Also</a></li></ul>
+</nav></div></nav>
+<script src="../includes/product/scripts/offcanvas_v2.js"></script></div><!--END.CLASS sidebar-offcanvas-->
+<div class="offcanvas_content_container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sticky_header_container"><div class="horizontal_nav"><div class="horizontal_nav_container"><div class="offcanvas_horizontal_nav"><div class="container-fluid"><div class="row"><div class="col-sm-12 hidden-xs"><nav class="navbar navbar-default" role="navigation" id="subnav"><div><ul class="nav navbar-nav crux_browse"><li id="crux_nav_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_example" class="crux_resource"><a href="../examples.html?category=ir-sensors&amp;s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;category=ir-sensors&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></nav></div><div class="visible-xs"><div class="container-fluid"><div class="row"><div class="col-xs-9"><div class="mobile_crux_nav_trigger"><div class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources<span class="icon-arrow-down icon_16"></span></button><ul class="dropdown-menu"><li id="crux_nav_mobile_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_mobile_example" class="crux_resource"><a href="../examples.html?category=ir-sensors&amp;s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_mobile_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;category=ir-sensors&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></div></div><div class="col-xs-3"><div class="translate_placeholder"></div></div></div></div></div></div></div></div></div></div></div><div class="content_container" id="content_container" itemprop="content">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+
+<section xmlns="http://www.w3.org/1999/xhtml" id="doc_center_content" lang="en" data-language="en"><div id="pgtype-ref"><div class="object_ref"><span id="buk4pp7-1" class="anchor_target"></span><h1 class="r2021a notranslate" itemprop="title">irSensor</h1><div class="doc_topic_desc"><div class="purpose_container"><p itemprop="purpose">Connection to infrared sensor</p><div class="switch"><a href="javascript:void(0);" id="expandAllPage">expand all in page</a></div></div></div><div class="refsummary" itemprop="content"><h2 id="d123e2959">Description</h2>
+    <div class="shortsummary"><p>This object represents a connection to an EV3 Infrared Sensor (item number 45509).
+      To get the relative distance of an object in front of the sensor, or to get data from an EV3
+      Remote Infrared Beacon (item number 45508), use this object with the functions listed in <a href="irsensor.html#buk4pp7-5" class="intrnllnk">Object Functions</a>.</p></div>
+  </div><div id="buk6h_g-1_div" class="ref_sect createobject"><h2 id="buk6h_g-1">Creation</h2>
+<span id="mw_2f62e995-e0c8-4e71-a775-f98e002df3b2" class="anchor_target"></span><div class="ref_sect"><h3 id="mw_2f62e995-e0c8-4e71-a775-f98e002df3b2">Syntax</h3><div class="syntax_signature"><div class="syntax_signature_module"><div class="code_responsive"><code class="synopsis"><a href="#d123e3060" class="intrnllnk">myirsensor = irSensor(myev3)</a></code></div><div class="code_responsive"><code class="synopsis"><a href="#d123e3079" class="intrnllnk">myirsensor = irSensor(myev3,inputport)</a></code></div></div></div></div><div class="clear"></div><div id="mw_d45dd7f9-3032-4990-adab-85c696f8d2ec_div" class="refsect2 description"><h3 id="mw_d45dd7f9-3032-4990-adab-85c696f8d2ec">Description</h3><div class="description_module"><div class="description_element"><p class="syntax_example"><a href="irsensor.html#buk4pp7-1_sep_buk41fw-2i" class="intrnllnk">example</a></p><div class="code_responsive"><p><span id="d123e3060" itemprop="syntax"><code class="synopsis"><a href="#mw_96409107-eea7-4310-a1a3-ba59e68ac73d" class="intrnllnk"><code class="argument">myirsensor</code></a> = irSensor(<a href="#buk4pp7-1_sep_shared-myev3" class="intrnllnk"><code class="argument">myev3</code></a>)</code></span>
+          creates a connection to an infrared sensor. You can use this connection with the functions
+          listed in <a href="irsensor.html#buk4pp7-5" class="intrnllnk">Object Functions</a> to get the relative distance of an object in front of the
+          sensor, or to get data from an EV3 Remote Infrared Beacon.</p><p>If multiple infrared sensors are attached to the EV3 brick, this function chooses the
+          sensor that is attached to the EV3 input port with the lowest number.</p></div></div><div class="description_element"><p class="syntax_example"><a href="irsensor.html#buk4pp7-1_sep_buk41fw-2i" class="intrnllnk">example</a></p><div class="code_responsive"><p><span id="d123e3079" itemprop="syntax"><code class="synopsis"><a href="#mw_96409107-eea7-4310-a1a3-ba59e68ac73d" class="intrnllnk"><code class="argument">myirsensor</code></a> = irSensor(<a href="#buk4pp7-1_sep_shared-myev3" class="intrnllnk"><code class="argument">myev3</code></a>,<code class="argument">inputport</code>)</code></span>
+          creates a connection to an infrared sensor that uses a specific EV3 input port by the
+            <a href="irsensor.html#buk4pp7-1_sep_shared-InputPort" class="intrnllnk"><span class="property">InputPort</span></a>
+          property.</p></div></div></div></div><div class="ref_sect"><h3 id="mw_5df8c8bc-e8b3-46ae-9f5f-4d18a6455684">Input Arguments</h3><div class="expandableContent"><p class="switch "><a href="javascript:void(0);" class="expandAllLink" data-allexpanded="false">expand all</a></p><div class="panel-group" id="mw_5df8c8bc-e8b3-46ae-9f5f-4d18a6455684_panel-group" role="tablist" aria-multiselectable="true"><div class="panel-group" role="tablist" aria-multiselectable="true"><div class="panel panel-default "><div itemscope="" itemprop="inputargument" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/NamedInputArgument" itemid="buk4pp7-1_sep_shared-myev3"><div role="tab" data-toggle="collapse" id="expand_panel_heading_buk4pp7-1_sep_shared-myev3" data-target="#expand_panel_body_buk4pp7-1_sep_shared-myev3" aria-controls="expand_panel_body_buk4pp7-1_sep_shared-myev3" class="panel-heading add_cursor_pointer collapsed" aria-expanded="false"><span id="inputarg_myev3" class="anchor_target"></span><h3 class="panel-title" id="buk4pp7-1_sep_shared-myev3"><code itemprop="name">myev3</code> &#8212; <span itemprop="purpose">Connection to EV3 brick</span><br/>
+<span class="add_font_color_general remove_bold"><span class="example_desc"><span itemprop="inputvalue">object handle</span></span></span></h3><span class="icon-arrow-open-down icon_24"></span><span class="icon-arrow-open-right icon_24"></span></div><div role="tabpanel" id="expand_panel_body_buk4pp7-1_sep_shared-myev3" aria-labelledby="expand_panel_heading_buk4pp7-1_sep_shared-myev3" class="panel-collapse collapse"><div class="panel-body">
+<p>Connection to EV3 brick, specified as a string that represents the object created using
+                <a href="legoev3.html"><code class="object">legoev3</code></a>.</p>
+<p class="description_valueexample"><strong>Example: </strong><code class="literal">myev3</code></p><p class="datatypelist"><strong>Data Types: </strong><code itemprop="datatype">char</code></p></div></div></div></div></div></div></div></div><div class="ref_sect"><h3 id="mw_97768695-b547-44d4-86d3-8b7f30d44fc1">Output Arguments</h3><div class="expandableContent"><p class="switch "><a href="javascript:void(0);" class="expandAllLink" data-allexpanded="false">expand all</a></p><div class="panel-group" id="mw_97768695-b547-44d4-86d3-8b7f30d44fc1_panel-group" role="tablist" aria-multiselectable="true"><div class="panel-group" role="tablist" aria-multiselectable="true"><div class="panel panel-default "><div role="tab" data-toggle="collapse" id="expand_panel_heading_mw_96409107-eea7-4310-a1a3-ba59e68ac73d" data-target="#expand_panel_body_mw_96409107-eea7-4310-a1a3-ba59e68ac73d" aria-controls="expand_panel_body_mw_96409107-eea7-4310-a1a3-ba59e68ac73d" class="panel-heading add_cursor_pointer collapsed" aria-expanded="false"><span id="outputarg_myirsensor" class="anchor_target"></span><h3 class="panel-title" id="mw_96409107-eea7-4310-a1a3-ba59e68ac73d"><code class="name">myirsensor</code> &#8212; Connection to infrared sensor<br/>
+<span class="add_font_color_general remove_bold"><span class="example_desc">object handle</span></span></h3><span class="icon-arrow-open-down icon_24"></span><span class="icon-arrow-open-right icon_24"></span></div><div role="tabpanel" id="expand_panel_body_mw_96409107-eea7-4310-a1a3-ba59e68ac73d" aria-labelledby="expand_panel_heading_mw_96409107-eea7-4310-a1a3-ba59e68ac73d" class="panel-collapse collapse"><div class="panel-body">
+            <p>Connection to infrared sensor, returned as an object handle.</p>
+          </div></div></div></div></div></div></div></div><div class="ref_sect"><h2 id="buk4pp7-4">Properties</h2><div class="expandableContent"><p class="switch "><a href="javascript:void(0);" class="expandAllLink" data-allexpanded="false">expand all</a></p><div class="panel-group" id="buk4pp7-4_panel-group" role="tablist" aria-multiselectable="true"><div itemscope="" class="ref_sect" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/ReferenceEntityGroup" itemprop="refentitygroup">
+      <div class="panel-group" role="tablist" aria-multiselectable="true"><div class="panel panel-default " itemscope="" itemprop="property" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/PropertyReference" itemid="buk4pp7-1-Channel"><div role="tab" data-toggle="collapse" id="expand_panel_heading_buk4pp7-1-Channel" data-target="#expand_panel_body_buk4pp7-1-Channel" aria-controls="expand_panel_body_buk4pp7-1-Channel" class="panel-heading add_cursor_pointer collapsed" aria-expanded="false"><span id="prop_Channel" class="anchor_target"></span><h3 class="panel-title" id="buk4pp7-1-Channel"><span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/ReferenceEntity" itemprop="refentityobj"><meta itemprop="refentity" content="property:irSensor.Channel"><code itemprop="name" id="propname_Channel">Channel</code></span> &#8212; <span itemprop="purpose">IR beacon channel</span><br/> <span class="add_font_color_general remove_bold"><span class="example_desc" itemprop="inputvalues"><span itemprop="inputvalue defaultvalue"><code class="literal">1</code></span> (default) | <span itemprop="inputvalue"><code class="literal">2</code></span> | <span itemprop="inputvalue"><code class="literal">3</code></span> | <span itemprop="inputvalue"><code class="literal">4</code></span></span></span></h3><span class="icon-arrow-open-down icon_24"></span><span class="icon-arrow-open-right icon_24"></span></div><div role="tabpanel" id="expand_panel_body_buk4pp7-1-Channel" aria-labelledby="expand_panel_heading_buk4pp7-1-Channel" class="panel-collapse collapse"><div class="panel-body">
+          <p>The channel number that the IR beacon uses, specified as a double. The red switch on
+            the beacon has four positions that determine the channel number. The forward position is
+            channel 1.</p>
+          <p class="description_valueexample"><strong>Example: </strong><code class="literal">2</code></p>
+        <p class="datatypelist"><strong>Data Types: </strong><code>double</code></p></div></div></div></div>
+      <div class="panel-group" role="tablist" aria-multiselectable="true"><div class="panel panel-default " itemscope="" itemprop="property" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/PropertyReference" itemid="buk4pp7-1_sep_shared-InputPort"><div role="tab" data-toggle="collapse" id="expand_panel_heading_buk4pp7-1_sep_shared-InputPort" data-target="#expand_panel_body_buk4pp7-1_sep_shared-InputPort" aria-controls="expand_panel_body_buk4pp7-1_sep_shared-InputPort" class="panel-heading add_cursor_pointer collapsed" aria-expanded="false"><span id="prop_InputPort" class="anchor_target"></span><h3 class="panel-title" id="buk4pp7-1_sep_shared-InputPort"><span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/ReferenceEntity" itemprop="refentityobj"><meta itemprop="refentity" content="property:irSensor.InputPort"><code itemprop="name" id="propname_InputPort">InputPort</code></span> &#8212; <span itemprop="purpose">Number of EV3 input port</span><br/> <span class="add_font_color_general remove_bold"><span class="example_desc" itemprop="inputvalues"><span itemprop="inputvalue"><code class="literal">1</code></span> | <span itemprop="inputvalue"><code class="literal">2</code></span> | <span itemprop="inputvalue"><code class="literal">3</code></span> | <span itemprop="inputvalue"><code class="literal">4</code></span></span></span></h3><span class="icon-arrow-open-down icon_24"></span><span class="icon-arrow-open-right icon_24"></span></div><div role="tabpanel" id="expand_panel_body_buk4pp7-1_sep_shared-InputPort" aria-labelledby="expand_panel_heading_buk4pp7-1_sep_shared-InputPort" class="panel-collapse collapse"><div class="panel-body"><p>This property is read-only.</p>
+<p>Number of the EV3 input port that the sensor uses, returned
+as a double.</p>
+<p class="description_valueexample"><strong>Example: </strong><code class="literal">1</code></p><p class="datatypelist"><strong>Data Types: </strong><code>double</code></p></div></div></div></div>
+    </div></div></div></div><div id="buk4pp7-5_div" class="refsect1 objectfunctions"><h2 id="buk4pp7-5">Object Functions</h2><div class="doc_classesgroup_container"><div class="table-responsive"><table class="table table-bordered table-condensed"><tbody><tr><td class="term notranslate"><a href="readproximity.html"><code class="function">readProximity</code></a></td><td class="description">Read distance from infrared sensor to object</td></tr><tr><td class="term notranslate"><a href="readbeaconproximity.html"><code class="function">readBeaconProximity</code></a></td><td class="description">Read distance and heading from infrared sensor to beacon</td></tr><tr><td class="term notranslate"><a href="readbeaconbutton.html"><code class="function">readBeaconButton</code></a></td><td class="description">Read number of pressed button on infrared beacon</td></tr></tbody></table></div></div>
+</div><div class="examples"><h2 id="mw_af71279f-ce93-428a-89a4-a75682fb1a96">Examples</h2><div class="expandableContent" id="expandableExamples"><p class="switch"><a href="javascript:void(0);" class="expandAllLink" data-allexpanded="true3">collapse all</a></p><div class="panel-group" role="tablist" aria-multiselectable="true" id="expand_panel_heading_buk4pp7-1.buk41fw-2i"><div class="panel panel-default "><div role="tab" data-toggle="collapse" id="expand_panel_heading_buk4pp7-1_sep_buk41fw-2i" data-target="#expand_panel_body_buk4pp7-1_sep_buk41fw-2i" aria-controls="expand_panel_body_buk4pp7-1_sep_buk41fw-2i" class="panel-heading add_cursor_pointer" aria-expanded="true"><h3 class="panel-title" id="buk4pp7-1_sep_buk41fw-2i">Use an Infrared Sensor to Get the Distance and Heading to an IR Beacon<br/>
+</h3><span class="icon-arrow-open-down icon_24"></span><span class="icon-arrow-open-right icon_24"></span></div><div role="tabpanel" id="expand_panel_body_buk4pp7-1_sep_buk41fw-2i" aria-labelledby="expand_panel_heading_buk4pp7-1_sep_buk41fw-2i" class="panel-collapse collapse in"><div class="panel-body">
+<p class="shortdesc">Get data from an infrared sensor, such as the
+distance to an object, the distance and heading to an IR beacon, or
+the number of a pressed button on an IR beacon.</p>
+<div class="procedure"><p>Create a connection to the EV3 brick called <em class="replaceable"><code>myev3</code></em>.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>myev3 = legoev3</pre></div></div></div><div class="code_responsive"><div class="programlisting"><div class="codeoutput"><pre>myev3 = 
+
+  legoev3 with properties:
+
+      FirmwareVersion: 'V1.03E'
+           HardwareID: []
+            IPAddress: []
+    CommunicationType: 'USB'
+         BatteryLevel: 0
+     ConnectedSensors: {'touch'  'infrared'  'color'  'sonic'}</pre></div></div></div><p>The sensor appears in the list of connected sensors.</p><p>Create a connection to an infrared sensor.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>myirsensor = irSensor(myev3)</pre></div></div></div><div class="code_responsive"><div class="programlisting"><div class="codeoutput"><pre>myirsensor = 
+
+  irSensor with properties:
+
+      Channel: 1
+    InputPort: 2</pre></div></div></div><p>Read the relative distance from the infrared sensor to
+the nearest object.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>proximity = readProximity(myirsensor)</pre></div></div></div><div class="code_responsive"><div class="programlisting"><div class="codeoutput"><pre>proximity =
+
+          76</pre></div></div></div><p>Read the relative distance and heading from the infrared
+sensor to an IR beacon that is using channel 2.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>[proximity,heading] = readBeaconProximity(myirsensor,2)</pre></div></div></div><div class="code_responsive"><div class="programlisting"><div class="codeoutput"><pre>proximity =
+
+ -128
+
+
+heading =
+
+    0</pre></div></div></div><p>These values indicate that no one is pressing a button on the
+IR beacon.</p><p>Press a button on the IR beacon and try again.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>[proximity,heading] = readBeaconProximity(myirsensor,2)</pre></div></div></div><div class="code_responsive"><div class="programlisting"><div class="codeoutput"><pre>proximity =
+
+   26
+
+
+heading =
+
+  -14</pre></div></div></div><p>The IR beacon is 26 distance units away from, and 14 heading
+units to the left of, the sensor.</p><p>Check which button someone presses on the IR beacon.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>beaconbutton = readBeaconButton(myirsensor,2)</pre></div></div></div><div class="code_responsive"><div class="programlisting"><div class="codeoutput"><pre>beaconbutton =
+
+           3</pre></div></div></div><p>Someone is pressing button 3.</p></div></div></div></div></div></div></div><div class="ref_sect"><h2 id="buk4pp7-1_seealso">See Also</h2><p><span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="legoev3.html"><span itemprop="name"><code class="object">legoev3</code></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="readbeaconbutton.html"><span itemprop="name"><code class="function">readBeaconButton</code></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="readbeaconproximity.html"><span itemprop="name"><code class="function">readBeaconProximity</code></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="readproximity.html"><span itemprop="name"><code class="function">readProximity</code></span></a></span></p><div class="examples_container"><h3 class="remove_border">Topics</h3><div itemprop="content"><ul class="list-unstyled"><li><a href="../ug/connections-to-ev3-hardware.html" class="a">Connections to EV3 Hardware</a></li><li><a href="../ug/ir-sensors.html" class="a">IR Sensor and Remote Infrared Beacon</a></li></ul></div></div></div>
+    </div></div><div class="clearfix"></div>
+<div align="center" class="feedbackblock"><iframe id="doc_survey"></iframe></div><script src="../includes/shared/scripts/docsurvey.js"></script>
+
+<script>initDocSurvey();</script></section>
+
+
+</div>
+</div>
+</div>
+</div><!--close_0960-->
+<div xmlns="http://www.w3.org/1999/xhtml" class="body_trail_container">
+<section><div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div class="row"><div class="col-xs-12 col-sm-4"><h2><a href="../index.html?s_cid=doc_ftr">MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware Documentation</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="../examples.html?s_cid=doc_ftr">Examples</a></li>
+<li><a href="../referencelist.html?type=function&amp;s_cid=doc_ftr">Functions</a></li>
+<li><a href="../release-notes.html?s_cid=doc_ftr">Release Notes</a></li>
+<li><a href="https://www.mathworks.com/help/releases/R2021a/pdf_doc/supportpkg/legomindstormsev3io/index.html?s_cid=doc_ftr">PDF Documentation</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4"><h2><a href="https://www.mathworks.com/support.html?s_cid=doc_ftr">Support</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="https://www.mathworks.com/matlabcentral/answers/index?s_cid=doc_ftr">MATLAB Answers</a></li><li><a href="https://www.mathworks.com/support/install-matlab.html?s_cid=doc_ftr">Installation Help</a></li><li><a href="https://www.mathworks.com/support/bugreports/?s_cid=doc_ftr">Bug Reports</a></li><li><a href="https://www.mathworks.com/support/requirements/product-requirements-platform-availability-list.html?s_cid=doc_ftr">Product Requirements</a></li><li><a href="https://www.mathworks.com/downloads/?s_cid=doc_ftr">Software Downloads</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div><!--END.CLASS container-fluid-->
+</section></div><!--END.CLASS body_trail_container-->
+<footer xmlns="http://www.w3.org/1999/xhtml" id="footer" class="bs-footer">
+<div class="container-fluid">
+<div class="footer">
+<div class="row">
+<div class="col-xs-12">
+<p class="copyright">© 1994-2021 The MathWorks, Inc.</p>
+<ul class="footernav"><li class="footernav_help"><a href="matlab:web(matlab.internal.licenseAgreement)">Terms of Use</a></li><li class="footernav_patents"><a href="matlab:web([matlabroot '/patents.txt'])">Patents</a></li><li class="footernav_trademarks"><a href="matlab:web([matlabroot '/trademarks.txt'])">Trademarks</a></li><li class="footernav_piracy"><a href="matlab:web([docroot '/acknowledgments.html'])">Acknowledgments</a></li></ul></div>
+</div>
+</div>
+</div>
+</footer>
+</div><!--close row-offcanvas-->
+</div><!--close_0970-->
+</body>
+</html>

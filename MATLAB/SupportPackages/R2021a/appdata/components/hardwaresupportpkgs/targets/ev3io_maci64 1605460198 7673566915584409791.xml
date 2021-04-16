@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentData>
+  <component>
+    <componentBaseName>hardwaresupportpkgs/targets/ev3io</componentBaseName>
+    <componentFileName>hardwaresupportpkgs/targets/ev3io_maci64_1605460198.zip</componentFileName>
+    <componentName>hardwaresupportpkgs/targets/ev3io_maci64</componentName>
+    <componentVersion>1605460198</componentVersion>
+    <instrset>0</instrset>
+    <locale />
+    <locationId>1</locationId>
+    <numFiles>3</numFiles>
+    <platformList>
+      <platform>maci64</platform>
+    </platformList>
+    <releaseFamily>R2021a</releaseFamily>
+    <size>9539</size>
+    <type />
+    <uncompressedBytes>35640</uncompressedBytes>
+  </component>
+</componentData>
+

@@ -1,0 +1,2 @@
+# Copyright 2014 The MathWorks, Inc.
+The EV3 brick screen pictures (firmware_version.png and IP_address.png) in the example - "Getting Started with LEGO(R) MINDSTORMS(R) EV3(TM) Hardware" are generated with Bricx Command Center. Please visit http://bricxcc.sourceforge.net/ for the Bricx source code.

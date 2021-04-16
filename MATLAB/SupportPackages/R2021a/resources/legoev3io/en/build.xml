@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="legoev3io" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="CommInvalidType">Invalid argument. Set the communication type to 'usb', 'wifi' or 'bluetooth'.</entry>
+    <entry key="SerialInvalidArgument">Invalid argument. Format arguments like this: legove3('bluetooth','COM19').</entry>
+    <entry key="BluetoothInvalidArgument">Invalid argument. Format arguments like this: legove3('bt','0016534119fd').</entry>
+    <entry key="WiFiInvalidArgument">Invalid argument. Format arguments like this: legoev3('wifi','192.168.1.7','0016534119fd').</entry>
+    <entry key="USBInvalidArgument">Invalid argument. Format arguments like this: legove3('usb').</entry>
+    <entry key="WiFiUnlockFailed">Failed to unlock WiFi connection.</entry>
+    <entry key="InstallerHIDDownloadFailed">Failed to download {0}.</entry>
+    <entry key="InstallerHIDInstallFailed">Failed to install {0}.</entry>
+    <entry key="InvalidTrackerMode">Invalid tracker mode. Must be 0, 1, or 2.</entry>
+    <entry key="Legoev3InvalidFirmware">The EV3 firmware version is out-of-date. Please update the firmware.</entry>
+    <entry key="Legoev3WiFiAlreadyConnected">There is already a 'legoev3' object for {0}.</entry>
+    <entry key="Legoev3BluetoothAlreadyConnected">There is already a 'legoev3' object for {0}.</entry>
+    <entry key="Legoev3BtAlreadyConnected">There is already a 'legoev3' object for {0}.</entry>
+    <entry key="Legoev3BtICTMissing">Instrument Control Toolbox is required for this functionality.</entry>
+    <entry key="Legoev3USBAlreadyConnected">There is already a 'legoev3' object for USB connection.</entry>
+    <entry key="Legoev3USBFailed">Failed to connect to EV3 through USB. Please check your USB connection.</entry>
+    <entry key="Legoev3WiFiFailed">Failed to connect to EV3 through WiFi. Please check your WiFi connection.</entry>
+    <entry key="Legoev3BluetoothFailed">Failed to connect to EV3 through Bluetooth. Please check your Bluetooth connection.</entry>
+    <entry key="Legoev3PlaytoneFailed">Failed to play a tone.</entry>
+    <entry key="Legoev3PlayToneInvalidInput">The input argument must be a number.</entry>
+    <entry key="Legoev3BeepFailed">Failed to beep.</entry>
+    <entry key="Legoev3BeepInvalidDuration">The input argument must be a number.</entry>
+    <entry key="Legoev3LCDWrongRow">The row number must be a integer [1, 9].</entry>
+    <entry key="Legoev3LCDWrongColumn">The column number must be a integer [1, 19].</entry>
+    <entry key="Legoev3LCDWrongText">The input argument must be a character vector.</entry>
+    <entry key="Legoev3WriteLCDFailed">Failed to write to the LCD.</entry>
+    <entry key="Legoev3ReadButtonFailed">Failed to read the state of the button.</entry>
+    <entry key="Legoev3LEDColorArgument">Invalid argument. Set the LED color to 'off', 'green', 'red' or 'orange'</entry>
+    <entry key="Legoev3LEDOffArgument">No extra argument needed for 'off'.</entry>
+    <entry key="Legoev3LEDModeArgument">Invalid argument. Set the LED mode to 'solid' or 'pulsing'.</entry>
+    <entry key="Legoev3WriteLEDFailed">Failed to change the state of the LED.</entry>
+    <entry key="Legoev3ReadInputDeviceREADYSIFailed">Failed to read the SI value of the input device.</entry>
+    <entry key="Legoev3ReadInputDeviceREADYRAWFailed">Failed to read the raw value of the input device.</entry>
+    <entry key="Legoev3ReadInputDeviceREADYPCTFailed">Failed to read the percentage value of the input device.</entry>
+    <entry key="Legoev3WriteInputDeviceFailed">Failed to write to the input device.</entry>
+    <entry key="Legoev3ReadInputDeviceListFailed">Failed to read the list of input devices.</entry>
+    <entry key="Legoev3ReadInputDeviceNameFailed">Failed to read the name of the input device.</entry>
+    <entry key="Legoev3ReadInputDeviceSymbolFailed">Failed to read the symbol of the input device.</entry>
+    <entry key="Legoev3ReadInputDeviceFormatFailed">Failed to read the format of the input device.</entry>
+    <entry key="Legoev3ReadInputDeviceMinmaxFailed">Failed to read the minimum and maximum values of the input device.</entry>
+    <entry key="Legoev3ReadFirmwareVerFailed">Failed to read the firmware version.</entry>
+    <entry key="Legoev3ReadOSVerFailed">Failed to read the OS version.</entry>
+    <entry key="Legoev3ReadBatteryLevelFailed">Failed to read the battery level.</entry>
+    <entry key="Legoev3FillRectangleFailed">Failed to draw a rectangle.</entry>
+    <entry key="Legoev3UpdateScreenFailed">Failed to update the screen.</entry>
+    <entry key="Legoev3InvalidButtonString">Invalid argument. Set the button to 'up', 'down', 'center', 'left' or 'right'.</entry>
+    <entry key="Legoev3SetOutputPowerFailed">Failed to set the output power.</entry>
+    <entry key="Legoev3OutputStartFailed">Failed to start the output.</entry>
+    <entry key="Legoev3StopMotorFailed">Failed to stop the motor.</entry>
+    <entry key="Legoev3GetOutputCountFailed">Failed to get the output count.</entry>
+    <entry key="Legoev3ClearOutputCountFailed">Failed to clear the output count.</entry>
+    <entry key="ColorNoSensorFound">No color sensor connected.</entry>
+    <entry key="ColorNoSensorFoundOnPort">No color sensor connected to input port {0}.</entry>
+    <entry key="ColorInvalidMode">Invalid argument. Set the mode to 'reflected' or 'ambient'.</entry>
+    <entry key="GyroNoSensorFound">No gyro sensor connected.</entry>
+    <entry key="GyroNoSensorFoundOnPort">No gyro sensor connected to input port {0}.</entry>
+    <entry key="IrNoSensorFound">No infrared sensor connected.</entry>
+    <entry key="IrNoSensorFoundOnPort">No infrared sensor connected to input port {0}.</entry>
+    <entry key="IrInvalidChannel">Invalid channel number. It must be 1, 2, 3 or 4.</entry>
+    <entry key="SonicNoSensorFound">No ultrasonic sensor connected.</entry>
+    <entry key="SonicNoSensorFoundOnPort">No ultrasonic sensor connected to input port {0}.</entry>
+    <entry key="TouchNoSensorFound">No touch sensor connected.</entry>
+    <entry key="TouchNoSensorFoundOnPort">No touch sensor connected to input port {0}.</entry>
+    <entry key="ConnectUSBFailed">Failed to connect to the EV3 brick. Please check the USB connection.</entry>
+    <entry key="BytecodeInvalidOutputPort">Invalid argument. Set the output port to 'A', 'B', 'C' or 'D'.</entry>
+    <entry key="MotorInvalidBrakeMode">Invalid argument. Set the brake mode to 0 or 1.</entry>
+    <entry key="MotorInvalidSpeed">Invalid argument. Set the speed to an integer between -100 (reverse) and 100 (forward).</entry>
+    <entry key="ErrorLoadingLibrary">Could not load the HIDAPI library. The library needs a supported compiler to be installed.</entry>
+    <entry key="InvalidUSBPointer">Invalid pointer to the USB device. Clear the 'legoev3' object, reconnect the EV3 USB and retry.</entry>
+  </message>
+</rsccat>
+<!-- Copyright 2014-2020 The MathWorks, Inc.
+-->

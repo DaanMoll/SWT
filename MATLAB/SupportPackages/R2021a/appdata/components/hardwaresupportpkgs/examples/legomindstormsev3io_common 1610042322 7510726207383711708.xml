@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentData>
+  <component>
+    <componentBaseName>hardwaresupportpkgs/examples/legomindstormsev3io</componentBaseName>
+    <componentFileName>hardwaresupportpkgs/examples/legomindstormsev3io_common_1610042322.zip</componentFileName>
+    <componentName>hardwaresupportpkgs/examples/legomindstormsev3io_common</componentName>
+    <componentVersion>1610042322</componentVersion>
+    <instrset>0</instrset>
+    <locale />
+    <locationId>1</locationId>
+    <numFiles>7</numFiles>
+    <platformList>
+      <platform>glnxa64</platform>
+      <platform>maci64</platform>
+      <platform>win64</platform>
+    </platformList>
+    <releaseFamily>R2021a</releaseFamily>
+    <size>81929</size>
+    <type />
+    <uncompressedBytes>89878</uncompressedBytes>
+  </component>
+</componentData>
+

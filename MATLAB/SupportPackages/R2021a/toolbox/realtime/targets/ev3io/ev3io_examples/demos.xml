@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    -->
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<demos>
+    <name>MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware</name>
+    <type>matlab</type>
+    <icon>HelpIcon.DEMOS</icon>
+    <description isCdata="no">
+        <p>MATLAB&#174; lets you communicate with LEGO MINDSTORMS EV3&#174; hardware. With this capability, you can use LEGO MINDSTORMS EV3 hardware as a physical I/O device.</p>
+    </description>
+    <website>
+        <a href="http://www.mathworks.com/academia/lego-mindstorms-nxt-software/legomindstorms-simulink.html">Product page at mathworks.com&#032;</a>
+        <a href="http://www.mathworks.com/academia/lego-mindstorms-nxt-software/legomindstorms-simulink.html"><img src="html/demo_arrow.png" border="none" alt="arrow" align="middle"></img></a>
+    </website>     
+    <demosection>
+        <label>Tutorials</label>
+        <demoitem>
+            <label>Getting Started with MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware</label>
+            <type>M-file</type>
+            <source>ev3io_gettingstarted</source>
+            <file>html/ev3io_gettingstarted.html</file>
+        </demoitem>
+        <demoitem>
+            <label>Interact with EV3 Brick Peripherals, Read Sensor Values, and Control Motors</label>
+            <type>M-file</type>
+            <source>ev3io_basic</source>
+            <file>html/ev3io_basic.html</file>
+        </demoitem>
+    </demosection>
+    <demosection>
+        <label>Application Examples</label>
+        <demoitem>
+            <label>Build a Collision Alarm Using the EV3 Ultrasonic Sensor</label>
+            <type>M-file</type>
+            <source>ev3io_collisionalarm</source>
+            <file>html/ev3io_collisionalarm.html</file>
+        </demoitem>
+        <demoitem>
+            <label>Improve the Steering of a Two-Wheel Vehicle Using a Closed-Loop Control Algorithm</label>
+            <type>M-file</type>
+            <source>ev3io_gostraight</source>
+            <file>html/ev3io_gostraight.html</file>
+        </demoitem>
+    </demosection>
+</demos>

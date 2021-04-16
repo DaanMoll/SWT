@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentData>
+  <component>
+    <componentBaseName>hardwaresupportpkgs/examples/legomindstormsev3io</componentBaseName>
+    <componentFileName>hardwaresupportpkgs/examples/legomindstormsev3io_maci64_1605460293.zip</componentFileName>
+    <componentName>hardwaresupportpkgs/examples/legomindstormsev3io_maci64</componentName>
+    <componentVersion>1605460293</componentVersion>
+    <instrset>0</instrset>
+    <locale />
+    <locationId>1</locationId>
+    <numFiles>2</numFiles>
+    <platformList>
+      <platform>maci64</platform>
+    </platformList>
+    <releaseFamily>R2021a</releaseFamily>
+    <size>28752</size>
+    <type />
+    <uncompressedBytes>28302</uncompressedBytes>
+  </component>
+</componentData>
+

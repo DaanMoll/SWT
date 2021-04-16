@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentData>
+  <component>
+    <componentBaseName>hardwaresupportpkgs/targets/ev3io</componentBaseName>
+    <componentFileName>hardwaresupportpkgs/targets/ev3io_common_1608806078.zip</componentFileName>
+    <componentName>hardwaresupportpkgs/targets/ev3io_common</componentName>
+    <componentVersion>1608806078</componentVersion>
+    <instrset>0</instrset>
+    <locale />
+    <locationId>1</locationId>
+    <numFiles>41</numFiles>
+    <platformList>
+      <platform>glnxa64</platform>
+      <platform>maci64</platform>
+      <platform>win64</platform>
+    </platformList>
+    <releaseFamily>R2021a</releaseFamily>
+    <size>41902</size>
+    <type />
+    <uncompressedBytes>167318</uncompressedBytes>
+  </component>
+</componentData>
+

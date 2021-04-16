@@ -1,0 +1,1213 @@
+{ "schema" : "referenceapi_schema.json",
+  "schemaVersion" : "1.0",
+  "productName" : "MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware",
+  "baseCode" : "ML_LEGO_EV3",
+  "helpFolder" : "legomindstormsev3io",
+  "helpLocation" : "supportpkg\/legomindstormsev3io",
+  "refItems" : [
+
+    { "href" : "ref\/beep.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "beep",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Play beep from speaker on EV3 brick",
+      "description" : "This MATLAB function plays a beep for one-tenth of a second at 500 Hz from the speaker that is located on the EV3 brick.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "beep(myev3)",
+            "beep(myev3,duration)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk401l_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] },
+        
+        { "name" : "duration",
+          "purpose" : "Duration, in seconds",
+          "htmlid" : "buk401l-duration",
+          "value" : 
+          [ "0.1",
+            "0 to 30" ],
+          "defaultvalue" : "0.1" } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "playtone.html",
+          "name" : "playTone" } ] },
+    { "href" : "ref\/clearlcd.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "clearLCD",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Clear characters from LCD on EV3 brick",
+      "description" : "This MATLAB function clears characters that the writeLCD function displays on the LCD located on the EV3 brick.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "clearLCD(myev3)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk40xb_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "writelcd.html",
+          "name" : "writeLCD" } ] },
+    { "href" : "ref\/colorsensor.html",
+      "refentity" : 
+      [ 
+        { "type" : "object",
+          "name" : "colorSensor" },
+        
+        { "type" : "function",
+          "name" : "colorSensor",
+          "fcntype" : "constructor" } ],
+      "refpurpose" : "Connection to color sensor",
+      "description" : "This object represents a connection to an EV3 Color Sensor (item number 45506).",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "mycolorsensor = colorSensor(myev3)",
+            "mycolorsensor = colorSensor(myev3,inputport)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk4n7s_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "mycolorsensor",
+          "purpose" : "Connection to color sensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "classpropertygroup" : 
+      [ 
+        { "classproperty" : 
+          [ 
+            { "name" : "InputPort",
+              "purpose" : "Number of EV3 input port",
+              "value" : 
+              [ "1",
+                "2",
+                "3",
+                "4" ] } ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "readcolor.html",
+          "name" : "readColor" },
+        
+        { "url" : "readlightintensity.html",
+          "name" : "readLightIntensity" } ] },
+    { "href" : "ref\/gyrosensor.html",
+      "refentity" : 
+      [ 
+        { "type" : "object",
+          "name" : "gyroSensor" },
+        
+        { "type" : "function",
+          "name" : "gyroSensor",
+          "fcntype" : "constructor" } ],
+      "refpurpose" : "Connection to gyroscopic sensor",
+      "description" : "This object represents a connection to a single-axis EV3 Gyro Sensor (item number 45505).",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "mygyrosensor = gyroSensor(myev3)",
+            "mygyrosensor = gyroSensor(myev3,inputport)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk4ptc-1_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "mygyrosensor",
+          "purpose" : "Connection to gyroscopic sensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "classpropertygroup" : 
+      [ 
+        { "classproperty" : 
+          [ 
+            { "name" : "InputPort",
+              "purpose" : "Number of EV3 input port",
+              "value" : 
+              [ "1",
+                "2",
+                "3",
+                "4" ] } ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "readrotationangle.html",
+          "name" : "readRotationAngle" },
+        
+        { "url" : "readrotationrate.html",
+          "name" : "readRotationRate" },
+        
+        { "url" : "resetrotationangle.html",
+          "name" : "resetRotationAngle" } ] },
+    { "href" : "ref\/irsensor.html",
+      "refentity" : 
+      [ 
+        { "type" : "object",
+          "name" : "irSensor" },
+        
+        { "type" : "function",
+          "name" : "irSensor",
+          "fcntype" : "constructor" } ],
+      "refpurpose" : "Connection to infrared sensor",
+      "description" : "This object represents a connection to an EV3 Infrared Sensor (item number 45509).",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "myirsensor = irSensor(myev3)",
+            "myirsensor = irSensor(myev3,inputport)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk4pp7-1_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "myirsensor",
+          "purpose" : "Connection to infrared sensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "classpropertygroup" : 
+      [ 
+        { "classproperty" : 
+          [ 
+            { "name" : "Channel",
+              "purpose" : "IR beacon channel",
+              "value" : 
+              [ "1",
+                "2",
+                "3",
+                "4" ],
+              "defaultvalue" : "1" },
+            
+            { "name" : "InputPort",
+              "purpose" : "Number of EV3 input port",
+              "value" : 
+              [ "1",
+                "2",
+                "3",
+                "4" ] } ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "readproximity.html",
+          "name" : "readProximity" },
+        
+        { "url" : "readbeaconproximity.html",
+          "name" : "readBeaconProximity" },
+        
+        { "url" : "readbeaconbutton.html",
+          "name" : "readBeaconButton" } ] },
+    { "href" : "ref\/legoev3.html",
+      "refentity" : 
+      [ 
+        { "type" : "object",
+          "name" : "legoev3" },
+        
+        { "type" : "function",
+          "name" : "legoev3",
+          "fcntype" : "constructor" } ],
+      "refpurpose" : "Connection to LEGO MINDSTORMS EV3 brick",
+      "description" : "This object represents a connection to a LEGO MINDSTORMS EV3 brick.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "myev3 = legoev3",
+            "myev3 = legoev3(communicationtype)",
+            "myev3 = legoev3(communicationtype,ipaddress,id)",
+            "myev3 = legoev3(communicationtype,comport)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "comport",
+          "purpose" : "COM port",
+          "htmlid" : "mw_9e57fa2f-88f4-4c06-ab8e-026c4afb1a16",
+          "value" : 
+          [ "character vector" ] } ],
+      "classpropertygroup" : 
+      [ 
+        { "classproperty" : 
+          [ 
+            { "name" : "FirmwareVersion",
+              "purpose" : "EV3 firmware version",
+              "value" : 
+              [ "character vector" ] },
+            
+            { "name" : "HardwareID",
+              "purpose" : "Unique hardware ID",
+              "value" : 
+              [ "character vector" ] },
+            
+            { "name" : "IPAddress",
+              "purpose" : "IP address",
+              "value" : 
+              [ "character vector" ] },
+            
+            { "name" : "CommunicationType",
+              "purpose" : "Communication type",
+              "value" : 
+              [ "USB",
+                "WiFi",
+                "Bluetooth" ] },
+            
+            { "name" : "BatteryLevel",
+              "purpose" : "Percentage of battery power remaining",
+              "value" : 
+              [ "integer in the range [0, 100]" ] },
+            
+            { "name" : "ConnectedSensors",
+              "purpose" : "List of connected sensors",
+              "value" : 
+              [ "''",
+                "'color'",
+                "'infrared'",
+                "'touch'",
+                "'gyro'",
+                "'sonic'",
+                "'unknown'" ] } ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "touchsensor.html",
+          "name" : "touchSensor" },
+        
+        { "url" : "irsensor.html",
+          "name" : "irSensor" },
+        
+        { "url" : "gyrosensor.html",
+          "name" : "gyroSensor" },
+        
+        { "url" : "colorsensor.html",
+          "name" : "colorSensor" },
+        
+        { "url" : "sonicsensor.html",
+          "name" : "sonicSensor" } ] },
+    { "href" : "ref\/motor.html",
+      "refentity" : 
+      [ 
+        { "type" : "object",
+          "name" : "motor" },
+        
+        { "type" : "function",
+          "name" : "motor",
+          "fcntype" : "constructor" } ],
+      "refpurpose" : "Connection to motor",
+      "description" : "This object represents a connection to an EV3 Large or Medium Motor (item numbers 45502 or 45503).",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "mymotor = motor(myev3,outputport)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk4pwt-1_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "mymotor",
+          "purpose" : "Connection to motor",
+          "value" : 
+          [ "object handle" ] } ],
+      "classpropertygroup" : 
+      [ 
+        { "classproperty" : 
+          [ 
+            { "name" : "OutputPort",
+              "purpose" : "Letter of EV3 output port",
+              "value" : 
+              [ "A",
+                "B",
+                "C",
+                "D" ] },
+            
+            { "name" : "Speed",
+              "purpose" : "Motor speed and direction",
+              "value" : 
+              [ "0",
+                "-100 to 100" ],
+              "defaultvalue" : "0" } ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "readrotation.html",
+          "name" : "readRotation" },
+        
+        { "url" : "resetrotation.html",
+          "name" : "resetRotation" },
+        
+        { "url" : "start.html",
+          "name" : "start" },
+        
+        { "url" : "stop.html",
+          "name" : "stop" } ] },
+    { "href" : "ref\/playtone.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "playTone",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Play tones from speaker on EV3 brick",
+      "description" : "This MATLAB function plays a 500 Hz tone for 1 second at volume level 10 on the speaker that is located on the EV3 brick.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "playTone(myev3)",
+            "playTone(myev3,freq,duration,volume)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk40zk_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] },
+        
+        { "name" : "freq",
+          "purpose" : "Frequency, in Hertz",
+          "htmlid" : "buk40zk-freq",
+          "value" : 
+          [ "500",
+            "250 to 10000" ],
+          "defaultvalue" : "500" },
+        
+        { "name" : "duration",
+          "purpose" : "Duration, in seconds",
+          "htmlid" : "buk40zk-duration",
+          "value" : 
+          [ "1",
+            "0 to 30" ],
+          "defaultvalue" : "1" },
+        
+        { "name" : "volume",
+          "purpose" : "Relative volume",
+          "htmlid" : "buk40zk-volume",
+          "value" : 
+          [ "10",
+            "0 to 100" ],
+          "defaultvalue" : "10" } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "beep.html",
+          "name" : "beep" } ] },
+    { "href" : "ref\/readbeaconbutton.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readBeaconButton",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read number of pressed button on infrared beacon",
+      "description" : "This MATLAB function returns the number of a pressed button or buttons on an infrared beacon, and returns it as a numeric value, from 0 to 11.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "button = readBeaconButton(myirsensor,channel)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myirsensor",
+          "purpose" : "Connection to infrared sensor",
+          "htmlid" : "buk4214_sep_shared-myirsensor",
+          "value" : 
+          [ "object handle" ] },
+        
+        { "name" : "channel",
+          "purpose" : "IR beacon channel",
+          "htmlid" : "buk4214_sep_shared-channel",
+          "value" : 
+          [ "1",
+            "2",
+            "3",
+            "4" ],
+          "defaultvalue" : "1" } ],
+      "outputs" : 
+      [ 
+        { "name" : "button",
+          "purpose" : "Button number",
+          "value" : 
+          [ "0 to 11" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "irsensor.html",
+          "name" : "irSensor" },
+        
+        { "url" : "readproximity.html",
+          "name" : "readProximity" },
+        
+        { "url" : "readbeaconproximity.html",
+          "name" : "readBeaconProximity" } ] },
+    { "href" : "ref\/readbeaconproximity.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readBeaconProximity",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read distance and heading from infrared sensor to beacon",
+      "description" : "This MATLAB function measures the relative proximity and heading from the infrared sensor to the infrared beacon.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "[proximity,heading] = readBeaconProximity(myirsensor,channel)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myirsensor",
+          "purpose" : "Connection to infrared sensor",
+          "htmlid" : "buk420z_sep_shared-myirsensor",
+          "value" : 
+          [ "object handle" ] },
+        
+        { "name" : "channel",
+          "purpose" : "IR beacon channel",
+          "htmlid" : "buk420z_sep_shared-channel",
+          "value" : 
+          [ "1",
+            "2",
+            "3",
+            "4" ],
+          "defaultvalue" : "1" } ],
+      "outputs" : 
+      [ 
+        { "name" : "proximity",
+          "purpose" : "Relative proximity of IR beacon",
+          "value" : 
+          [ "0 to 100" ] },
+        
+        { "name" : "heading",
+          "purpose" : "Relative heading of IR beacon",
+          "value" : 
+          [ "-25 to 25" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "irsensor.html",
+          "name" : "irSensor" },
+        
+        { "url" : "readproximity.html",
+          "name" : "readProximity" },
+        
+        { "url" : "readbeaconbutton.html",
+          "name" : "readBeaconButton" } ] },
+    { "href" : "ref\/readbutton.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readButton",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read whether button on EV3 brick is being pressed",
+      "description" : "This MATLAB function reads whether a specific button on the EV3 is being pressed, and returns the status as a logical value:",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "result = readButton(myev3,button)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk403m_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] },
+        
+        { "name" : "button",
+          "purpose" : "Button position",
+          "htmlid" : "buk403m-button",
+          "value" : 
+          [ "up",
+            "down",
+            "left",
+            "right",
+            "center" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "result",
+          "purpose" : "Status of button",
+          "value" : 
+          [ "0",
+            "1" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" } ] },
+    { "href" : "ref\/readcolor.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readColor",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read color of object in front of color sensor",
+      "description" : "This MATLAB function reads the color of an object in front of the color sensor, and returns it as a string, such as red, green, or blue.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "color = readColor(mycolorsensor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mycolorsensor",
+          "purpose" : "Connection to color sensor",
+          "htmlid" : "buk41aq_sep_shared-mycolorsensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "color",
+          "purpose" : "Color name",
+          "value" : 
+          [ "none",
+            "black",
+            "blue",
+            "green",
+            "yellow",
+            "red",
+            "white",
+            "brown" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "colorsensor.html",
+          "name" : "colorSensor" },
+        
+        { "url" : "readlightintensity.html",
+          "name" : "readLightIntensity" } ] },
+    { "href" : "ref\/readdistance.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readDistance",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read distance from ultrasonic sensor to object",
+      "description" : "This MATLAB function measures the distance from the ultrasonic sensor to an object, and returns the measurement in meters.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "distance = readDistance(mysonicsensor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mysonicsensor",
+          "purpose" : "Connection to ultrasonic sensor",
+          "htmlid" : "buk41dz-mysonicsensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "distance",
+          "purpose" : "Distance to object",
+          "value" : 
+          [ "0 to 2.55" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "sonicsensor.html",
+          "name" : "sonicSensor" } ] },
+    { "href" : "ref\/readlightintensity.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readLightIntensity",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read intensity of light that reaches color sensor",
+      "description" : "This MATLAB function measures the intensity of the light that reaches the color sensor, and returns it as value from 0 to 100 (dark to light).",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "intensity = readLightIntensity(mycolorsensor,mode)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mycolorsensor",
+          "purpose" : "Connection to color sensor",
+          "htmlid" : "buk41bt_sep_shared-mycolorsensor",
+          "value" : 
+          [ "object handle" ] },
+        
+        { "name" : "mode",
+          "purpose" : "Read ambient or reflected light",
+          "htmlid" : "buk41bt-mode",
+          "value" : 
+          [ "ambient",
+            "reflected" ],
+          "defaultvalue" : "ambient" } ],
+      "outputs" : 
+      [ 
+        { "name" : "intensity",
+          "purpose" : "Light intensity",
+          "value" : 
+          [ "0 to 100" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "colorsensor.html",
+          "name" : "colorSensor" },
+        
+        { "url" : "readcolor.html",
+          "name" : "readColor" } ] },
+    { "href" : "ref\/readproximity.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readProximity",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read distance from infrared sensor to object",
+      "description" : "This MATLAB function measures the relative distance from the infrared sensor to a nearby object, and returns it as a value from 0 to 100 (near to far).",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "proximity = readProximity(myirsensor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myirsensor",
+          "purpose" : "Connection to infrared sensor",
+          "htmlid" : "buk42zi_sep_shared-myirsensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "proximity",
+          "purpose" : "Relative distance to object",
+          "value" : 
+          [ "0 to 100" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "irsensor.html",
+          "name" : "irSensor" },
+        
+        { "url" : "readbeaconproximity.html",
+          "name" : "readBeaconProximity" },
+        
+        { "url" : "readbeaconbutton.html",
+          "name" : "readBeaconButton" } ] },
+    { "href" : "ref\/readrotation.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readRotation",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read rotation from motor",
+      "description" : "This MATLAB function reads the total amount of rotation since the creation of the connection to the motor, and returns the measurement in degrees.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "rotation = readRotation(mymotor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mymotor",
+          "purpose" : "Connection to motor",
+          "htmlid" : "buk43aq_sep_shared-mymotor",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "rotation",
+          "purpose" : "rotation",
+          "value" : 
+          [ "degrees" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "motor.html",
+          "name" : "motor" },
+        
+        { "url" : "start.html",
+          "name" : "start" },
+        
+        { "url" : "stop.html",
+          "name" : "stop" },
+        
+        { "url" : "resetrotation.html",
+          "name" : "resetRotation" } ] },
+    { "href" : "ref\/readrotationangle.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readRotationAngle",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read rotation angle from gyroscopic sensor",
+      "description" : "This MATLAB function reads the total amount of rotation since the creation of the connection to the sensor, and returns the measurement in degrees.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "angle = readRotationAngle(mygyrosensor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mygyrosensor",
+          "purpose" : "Connection to gyroscopic sensor",
+          "htmlid" : "buk4245_sep_shared-mygyrosensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "angle",
+          "purpose" : "Angle of rotation",
+          "value" : 
+          [ "angle of rotation" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "gyrosensor.html",
+          "name" : "gyroSensor" },
+        
+        { "url" : "readrotationrate.html",
+          "name" : "readRotationRate" },
+        
+        { "url" : "resetrotationangle.html",
+          "name" : "resetRotationAngle" } ] },
+    { "href" : "ref\/readrotationrate.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readRotationRate",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read rotation rate from gyroscopic sensor",
+      "description" : "This MATLAB function reads the rate of rotation of the sensor, and returns the measurement in degrees per second.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "rotationrate = readRotationRate(mygyrosensor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mygyrosensor",
+          "purpose" : "Connection to gyroscopic sensor",
+          "htmlid" : "buk4256_sep_shared-mygyrosensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "rotationrate",
+          "purpose" : "Rotation rate",
+          "value" : 
+          [ "-440 to 440" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "gyrosensor.html",
+          "name" : "gyroSensor" },
+        
+        { "url" : "readrotationangle.html",
+          "name" : "readRotationAngle" },
+        
+        { "url" : "resetrotationangle.html",
+          "name" : "resetRotationAngle" } ] },
+    { "href" : "ref\/readtouch.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "readTouch",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Read touch sensor value",
+      "description" : "This MATLAB function reads whether an object is pressing the front of the touch sensor, and returns the status as a logical value:",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "pressed = readTouch(mytouchsensor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mytouchsensor",
+          "purpose" : "Connection to touch sensor",
+          "htmlid" : "buk42w4-mytouchsensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "pressed",
+          "purpose" : "Touch sensor status",
+          "value" : 
+          [ "0",
+            "1" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "touchsensor.html",
+          "name" : "touchSensor" } ] },
+    { "href" : "ref\/resetrotation.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "resetRotation",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Reset rotation count to zero",
+      "description" : "This MATLAB function resets the rotation measurement to zero.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "resetRotation(mymotor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mymotor",
+          "purpose" : "Connection to motor",
+          "htmlid" : "buk43bq_sep_shared-mymotor",
+          "value" : 
+          [ "object handle" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "motor.html",
+          "name" : "motor" },
+        
+        { "url" : "start.html",
+          "name" : "start" },
+        
+        { "url" : "stop.html",
+          "name" : "stop" },
+        
+        { "url" : "readrotation.html",
+          "name" : "readRotation" } ] },
+    { "href" : "ref\/resetrotationangle.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "resetRotationAngle",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Reset rotation angle to zero",
+      "description" : "This MATLAB function resets the rotation angle measurement to zero.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "resetRotationAngle(mygyrosensor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mygyrosensor",
+          "purpose" : "Connection to gyroscopic sensor",
+          "htmlid" : "buk427e_sep_shared-mygyrosensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "gyrosensor.html",
+          "name" : "gyroSensor" },
+        
+        { "url" : "readrotationangle.html",
+          "name" : "readRotationAngle" },
+        
+        { "url" : "readrotationrate.html",
+          "name" : "readRotationRate" } ] },
+    { "href" : "ref\/sonicsensor.html",
+      "refentity" : 
+      [ 
+        { "type" : "object",
+          "name" : "sonicSensor" },
+        
+        { "type" : "function",
+          "name" : "sonicSensor",
+          "fcntype" : "constructor" } ],
+      "refpurpose" : "Connection to ultrasonic sensor",
+      "description" : "This object represents a connection to an EV3 Ultrasonic Sensor (item number 45504).",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "mysonicsensor = sonicSensor(myev3)",
+            "mysonicsensor = sonicSensor(myev3,inputport)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk4pe3-1_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "mysonicsensor",
+          "purpose" : "Connection to ultrasonic sensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "classpropertygroup" : 
+      [ 
+        { "classproperty" : 
+          [ 
+            { "name" : "InputPort",
+              "purpose" : "Number of EV3 input port",
+              "value" : 
+              [ "1",
+                "2",
+                "3",
+                "4" ] } ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "readdistance.html",
+          "name" : "readDistance" } ] },
+    { "href" : "ref\/start.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "start",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Start motor",
+      "description" : "This MATLAB function starts the motor, using the speed and direction specified by the Speed property.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "start(mymotor)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mymotor",
+          "purpose" : "Connection to motor",
+          "htmlid" : "buk4290_sep_shared-mymotor",
+          "value" : 
+          [ "object handle" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "motor.html",
+          "name" : "motor" },
+        
+        { "url" : "stop.html",
+          "name" : "stop" },
+        
+        { "url" : "readrotation.html",
+          "name" : "readRotation" },
+        
+        { "url" : "resetrotation.html",
+          "name" : "resetRotation" } ] },
+    { "href" : "ref\/stop.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "stop",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Stop motor",
+      "description" : "This MATLAB function stops supplying power to the motor and lets the motor coast to a stop.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "stop(mymotor)",
+            "stop(mymotor,mode)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "mymotor",
+          "purpose" : "Connection to motor",
+          "htmlid" : "buk42_r_sep_shared-mymotor",
+          "value" : 
+          [ "object handle" ] },
+        
+        { "name" : "mode",
+          "purpose" : "Breaking mode",
+          "htmlid" : "buk42_r-mode",
+          "value" : 
+          [ "0",
+            "1" ],
+          "defaultvalue" : "0" } ],
+      "seealso" : 
+      [ 
+        { "url" : "motor.html",
+          "name" : "motor" },
+        
+        { "url" : "start.html",
+          "name" : "start" },
+        
+        { "url" : "readrotation.html",
+          "name" : "readRotation" },
+        
+        { "url" : "resetrotation.html",
+          "name" : "resetRotation" } ] },
+    { "href" : "ref\/touchsensor.html",
+      "refentity" : 
+      [ 
+        { "type" : "object",
+          "name" : "touchSensor" },
+        
+        { "type" : "function",
+          "name" : "touchSensor",
+          "fcntype" : "constructor" } ],
+      "refpurpose" : "Connection to touch sensor",
+      "description" : "This object represents a connection to an EV3 Touch Sensor (item number 45507).",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "mytouchsensor = touchSensor(myev3)",
+            "mytouchsensor = touchSensor(myev3,inputport)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk4pnb-1_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "mytouchsensor",
+          "purpose" : "Connection to touch sensor",
+          "value" : 
+          [ "object handle" ] } ],
+      "classpropertygroup" : 
+      [ 
+        { "classproperty" : 
+          [ 
+            { "name" : "InputPort",
+              "purpose" : "Number of EV3 input port",
+              "value" : 
+              [ "1",
+                "2",
+                "3",
+                "4" ] } ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "irsensor.html",
+          "name" : "irSensor" },
+        
+        { "url" : "gyrosensor.html",
+          "name" : "gyroSensor" },
+        
+        { "url" : "colorsensor.html",
+          "name" : "colorSensor" },
+        
+        { "url" : "sonicsensor.html",
+          "name" : "sonicSensor" } ] },
+    { "href" : "ref\/writelcd.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "writeLCD",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Write characters to LCD on EV3 brick",
+      "description" : "This MATLAB function displays a string near the center of the LCD located on the EV3 brick.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "writeLCD(myev3,string)",
+            "writeLCD(myev3,string,row,column)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk4ytc_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] },
+        
+        { "name" : "string",
+          "purpose" : "Characters to display",
+          "htmlid" : "buk4ytc-string",
+          "value" : 
+          [ "string" ] },
+        
+        { "name" : "row",
+          "purpose" : "Row on LCD",
+          "htmlid" : "buk4ytc-row",
+          "value" : 
+          [ "1 to 9" ] },
+        
+        { "name" : "column",
+          "purpose" : "Column on LCD",
+          "htmlid" : "buk4ytc-column",
+          "value" : 
+          [ "1 to 19" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" },
+        
+        { "url" : "clearlcd.html",
+          "name" : "clearLCD" } ] },
+    { "href" : "ref\/writestatuslight.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "writeStatusLight",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Control color and mode of status light on EV3 brick",
+      "description" : "This MATLAB function controls the status light that surrounds the five buttons on the front of the EV3 brick.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "writeStatusLight(myev3,color,mode)",
+            "writeStatusLight(myev3,off)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "myev3",
+          "purpose" : "Connection to EV3 brick",
+          "htmlid" : "buk405w_sep_shared-myev3",
+          "value" : 
+          [ "object handle" ] },
+        
+        { "name" : "color",
+          "purpose" : "Color of status light",
+          "htmlid" : "buk405w-color",
+          "value" : 
+          [ "off",
+            "green",
+            "red",
+            "orange" ],
+          "defaultvalue" : "off" },
+        
+        { "name" : "mode",
+          "purpose" : "Pulsing or continuous light",
+          "htmlid" : "buk405w-mode",
+          "value" : 
+          [ "solid",
+            "pulsing" ],
+          "defaultvalue" : "solid" },
+        
+        { "name" : "off",
+          "purpose" : "Turns the status light off",
+          "htmlid" : "buk405w-off",
+          "value" : 
+          [ "off" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "legoev3.html",
+          "name" : "legoev3" } ] }
+  ]
+}

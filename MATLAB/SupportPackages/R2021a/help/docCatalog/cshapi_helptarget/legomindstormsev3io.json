@@ -1,0 +1,331 @@
+{ "helplocation" : "supportpkg\/legomindstormsev3io",
+    "locale" : "en",
+    "helptargets" : 
+    { "BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample" : 
+      [ 
+        { "path" : "examples\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample-1" : 
+      [ 
+        { "path" : "examples\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e431",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e5696",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample-2" : 
+      [ 
+        { "path" : "examples\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e437",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e5702",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample-3" : 
+      [ 
+        { "path" : "examples\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e447",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e5712",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample-4" : 
+      [ 
+        { "path" : "examples\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e455",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e5720",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample-5" : 
+      [ 
+        { "path" : "examples\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e465",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e5730",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample-6" : 
+      [ 
+        { "path" : "examples\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e481",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e5746",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample-7" : 
+      [ 
+        { "path" : "examples\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e489",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e5754",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample-8" : 
+      [ 
+        { "path" : "examples\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e495",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/build-a-collision-alarm-using-the-ev3-ultrasonic-sensor.html#d123e5760",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample" : 
+      [ 
+        { "path" : "examples\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample-1" : 
+      [ 
+        { "path" : "examples\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e66",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e5331",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample-2" : 
+      [ 
+        { "path" : "examples\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e72",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e5337",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample-3" : 
+      [ 
+        { "path" : "examples\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e86",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e5351",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample-4" : 
+      [ 
+        { "path" : "examples\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e96",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e5361",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample-5" : 
+      [ 
+        { "path" : "examples\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e153",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e5418",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample-6" : 
+      [ 
+        { "path" : "examples\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e197",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e5462",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample-7" : 
+      [ 
+        { "path" : "examples\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e206",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e5471",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample-8" : 
+      [ 
+        { "path" : "examples\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e215",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/getting-started-with-matlab-support-package-for-lego-mindstorms-ev3-hardware.html#d123e5480",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample" : 
+      [ 
+        { "path" : "examples\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-1" : 
+      [ 
+        { "path" : "examples\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e530",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e5795",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-2" : 
+      [ 
+        { "path" : "examples\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e537",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e5802",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-3" : 
+      [ 
+        { "path" : "examples\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e547",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e5812",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-4" : 
+      [ 
+        { "path" : "examples\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e555",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e5820",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-5" : 
+      [ 
+        { "path" : "examples\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e572",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e5837",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-6" : 
+      [ 
+        { "path" : "examples\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e594",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e5859",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-7" : 
+      [ 
+        { "path" : "examples\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e616",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e5881",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample-8" : 
+      [ 
+        { "path" : "examples\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e630",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/improve-the-steering-of-a-two-wheel-vehicle-using-a-closed-loop-control-algorithm.html#d123e5895",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample" : 
+      [ 
+        { "path" : "examples\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample-1" : 
+      [ 
+        { "path" : "examples\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e253",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e5518",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample-2" : 
+      [ 
+        { "path" : "examples\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e265",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e5530",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample-3" : 
+      [ 
+        { "path" : "examples\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e276",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e5541",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample-4" : 
+      [ 
+        { "path" : "examples\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e286",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e5551",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample-5" : 
+      [ 
+        { "path" : "examples\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e324",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e5589",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample-6" : 
+      [ 
+        { "path" : "examples\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e344",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e5609",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample-7" : 
+      [ 
+        { "path" : "examples\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e382",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e5647",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample-8" : 
+      [ 
+        { "path" : "examples\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e389",
+          "group" : "legomindstormsev3io_examples",
+          "page_format" : "doc_center" },
+        
+        { "path" : "ref\/interact-with-ev3-brick-peripherals-read-sensor-values-and-control-motors.html#d123e5654",
+          "group" : "legomindstormsev3io_ref",
+          "page_format" : "doc_center" } ],
+      "legomindstormsev3io_doccenter-examplelandingpage" : 
+      [ 
+        { "path" : "examples.html",
+          "page_format" : "doc_center" } ] } }

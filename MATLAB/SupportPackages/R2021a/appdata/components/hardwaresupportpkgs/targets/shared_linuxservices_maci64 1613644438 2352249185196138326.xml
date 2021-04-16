@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentData>
+  <component>
+    <componentBaseName>hardwaresupportpkgs/targets/shared_linuxservices</componentBaseName>
+    <componentFileName>hardwaresupportpkgs/targets/shared_linuxservices_maci64_1613644438.zip</componentFileName>
+    <componentName>hardwaresupportpkgs/targets/shared_linuxservices_maci64</componentName>
+    <componentVersion>1613644438</componentVersion>
+    <instrset>0</instrset>
+    <locale />
+    <locationId>1</locationId>
+    <numFiles>13</numFiles>
+    <platformList>
+      <platform>maci64</platform>
+    </platformList>
+    <releaseFamily>R2021a</releaseFamily>
+    <size>418956</size>
+    <type />
+    <uncompressedBytes>1458180</uncompressedBytes>
+  </component>
+</componentData>
+

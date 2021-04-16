@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productData>
+  <altDependencies>
+    <product>
+      <isControllingProduct>true</isControllingProduct>
+      <productBaseCode>ML</productBaseCode>
+      <productName>MATLAB</productName>
+      <productNumber>1</productNumber>
+      <productVersion>9.10</productVersion>
+      <releaseDescription>R2021a</releaseDescription>
+      <releaseFamily>R2021a</releaseFamily>
+    </product>
+  </altDependencies>
+  <dependsOn>
+    <component>
+      <name>hardwaresupportpkgs/licenses/asla_license_common</name>
+      <instrset>0</instrset>
+      <locale />
+      <platformList>
+        <platform>glnxa64</platform>
+        <platform>maci64</platform>
+        <platform>win64</platform>
+      </platformList>
+      <version>1610752841</version>
+    </component>
+    <component>
+      <name>hardwaresupportpkgs/targets/ev3io_common</name>
+      <instrset>0</instrset>
+      <locale />
+      <platformList>
+        <platform>glnxa64</platform>
+        <platform>maci64</platform>
+        <platform>win64</platform>
+      </platformList>
+      <version>1608806078</version>
+    </component>
+    <component>
+      <name>hardwaresupportpkgs/targets/ev3io_resources_common</name>
+      <instrset>0</instrset>
+      <locale />
+      <platformList>
+        <platform>glnxa64</platform>
+        <platform>maci64</platform>
+        <platform>win64</platform>
+      </platformList>
+      <version>1605404859</version>
+    </component>
+    <component>
+      <name>hardwaresupportpkgs/targets/ev3io_examples_common</name>
+      <instrset>0</instrset>
+      <locale />
+      <platformList>
+        <platform>glnxa64</platform>
+        <platform>maci64</platform>
+        <platform>win64</platform>
+      </platformList>
+      <version>1605665733</version>
+    </component>
+    <component>
+      <name>hardwaresupportpkgs/legomindstormsev3io_doc_en_common</name>
+      <instrset>0</instrset>
+      <locale />
+      <platformList>
+        <platform>glnxa64</platform>
+        <platform>maci64</platform>
+        <platform>win64</platform>
+      </platformList>
+      <version>1611804637</version>
+    </component>
+    <component>
+      <name>hardwaresupportpkgs/targets/shared_linuxservices_common</name>
+      <instrset>0</instrset>
+      <locale />
+      <platformList>
+        <platform>glnxa64</platform>
+        <platform>maci64</platform>
+        <platform>win64</platform>
+      </platformList>
+      <version>1612484170</version>
+    </component>
+    <component>
+      <name>hardwaresupportpkgs/targets/shared_linuxservices_resources_common</name>
+      <instrset>0</instrset>
+      <locale />
+      <platformList>
+        <platform>glnxa64</platform>
+        <platform>maci64</platform>
+        <platform>win64</platform>
+      </platformList>
+      <version>1605404847</version>
+    </component>
+    <component>
+      <name>hardwaresupportpkgs/examples/legomindstormsev3io_common</name>
+      <instrset>0</instrset>
+      <locale />
+      <platformList>
+        <platform>glnxa64</platform>
+        <platform>maci64</platform>
+        <platform>win64</platform>
+      </platformList>
+      <version>1610042322</version>
+    </component>
+  </dependsOn>
+  <installerUsage>
+    <usage>professional</usage>
+  </installerUsage>
+  <isControllingProduct>false</isControllingProduct>
+  <licenseAgreementType>ASLA</licenseAgreementType>
+  <platformList>
+    <platform>glnxa64</platform>
+    <platform>maci64</platform>
+    <platform>win64</platform>
+  </platformList>
+  <productBaseCode>ML_LEGO_EV3</productBaseCode>
+  <productName>MATLAB Support Package for LEGO MINDSTORMS EV3 Hardware</productName>
+  <productNumber>2103</productNumber>
+  <productType>hardwareSupportPkg</productType>
+  <productVersion>21.1.0</productVersion>
+  <releaseDescription>R2021a</releaseDescription>
+  <releaseFamily>R2021a</releaseFamily>
+  <requiredProducts />
+</productData>
+

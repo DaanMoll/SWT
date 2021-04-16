@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<demos>
+  <demoitem>
+    <source>GettingStartedWithMATLABRSpkgForLEGOEV3HardwareExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex03593703</metadata>
+    <sandboxPublished/>
+    <hideCode/>
+    <product>matlab</product>
+    <product>legomindstormsev3io</product>
+    <file timestamp="1524854158" component="legomindstormsev3io">IP_address.png</file>
+    <file timestamp="1524854158" component="legomindstormsev3io">hardware_ID.png</file>
+  </demoitem>
+  <demoitem>
+    <source>InteractEV3BrickPeripheralsReadSensorValuesControlMotorsExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex18843747</metadata>
+    <sandboxPublished/>
+    <hideCode/>
+    <product>matlab</product>
+    <product>legomindstormsev3io</product>
+  </demoitem>
+  <demoitem>
+    <source>ImproveSteeringOfVehicleUsingAClosedLoopControlAlgorithmExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex46887177</metadata>
+    <sandboxPublished/>
+    <hideCode/>
+    <product>matlab</product>
+    <product>legomindstormsev3io</product>
+  </demoitem>
+  <demoitem>
+    <source>BuildACollisionAlarmUsingTheEV3UltrasonicSensorExample</source>
+    <type>M-file</type>
+    <extension>m</extension>
+    <metadata>ex49420948</metadata>
+    <sandboxPublished/>
+    <hideCode/>
+    <product>matlab</product>
+    <product>legomindstormsev3io</product>
+  </demoitem>
+</demos>
