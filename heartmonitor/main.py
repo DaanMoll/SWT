@@ -54,9 +54,12 @@ def blood_pressure(number):
 
 
 if __name__ == '__main__':
-    pulse = random.randint(30, 150)
-    o2 = random.randint(75, 100)
+    #pulse = random.randint(30, 150)
+    pulse = int(input("Add pulse number (e.g. 70)"))
+    #o2 = random.randint(75, 100)
+    o2 = int(input("Add oxygen number (e.g. 96)"))
     blood_p = str(random.randint(30, 250)) + "/" + str(random.randint(30, 160))
+    #blood_p = input("Add blood pressure number (e.g. 100/80)")
     print("Random heart rate number: ", pulse)
     heart(pulse)
     print("Random oxygen number: ", o2)
