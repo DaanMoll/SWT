@@ -7,10 +7,7 @@ import random
 
 
 def heart(number):
-    def __init__(self):
-        self.number = number
 
-    print("Random heart rate number: ", number)
     if (number >= 60 and number <= 100):
         print("Normal heart rate")
     elif (number >= 40 and number <= 59):
@@ -26,10 +23,7 @@ def heart(number):
 
 
 def oxygen(number):
-    def __init__(self):
-        self.number = number
 
-    print("Random oxygen number: ", number)
     if number >= 95:
         print("Normal oxygen")
     elif (number < 95 and number >= 85):
@@ -37,9 +31,36 @@ def oxygen(number):
     else:
         print("WARNING! Situation is very critical.")
 
+def blood_pressure(number):
+    numbers = number.split("/")
+    print(numbers)
+
+    first = int(numbers[0])
+    second = int(numbers[1])
+
+    """
+    can it be 100/50? is that a thing or are they correlated?
+    from reading online i think they are correlated
+    but still, check if valid input?
+    """
+
+    if first < 90 and second < 60:
+        print("WARNING! Low bloodpressure! seek medical attention!")
+    elif first > 140 and second > 90:
+        print("WARNING! High bloodpressure! Seek medical attention!")
+    else:
+        print("Blood pressure is normal")
+    pass
+
 
 if __name__ == '__main__':
-    n = random.randint(0, 190)
-    k = random.randint(0, 100)
-    heart(n)
-    oxygen(k)
+    pulse = random.randint(30, 150)
+    o2 = random.randint(75, 100)
+    blood_p = "120/80"
+
+    print("Random heart rate number: ", pulse)
+    heart(pulse)
+    print("Random oxygen number: ", o2)
+    oxygen(o2)
+    print("Blood pressure: ", blood_p)
+    blood_pressure(blood_p)
