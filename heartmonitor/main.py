@@ -7,8 +7,6 @@ import random
 
 
 def heart(number):
-    def __init__(self):
-        self.number = number
 
     print("Random heart rate number: ", number)
     if (number >= 60 and number <= 100):
@@ -26,8 +24,6 @@ def heart(number):
 
 
 def oxygen(number):
-    def __init__(self):
-        self.number = number
 
     print("Random oxygen number: ", number)
     if number >= 95:
