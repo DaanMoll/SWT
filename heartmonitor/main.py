@@ -44,9 +44,9 @@ def blood_pressure(number):
     but still, check if valid input?
     """
 
-    if first < 90 and second < 60:
+    if first <= 90 and second <= 60:
         print("WARNING! Low bloodpressure! seek medical attention!")
-    elif first > 140 and second > 90:
+    elif first >= 140 and second >= 90:
         print("WARNING! High bloodpressure! Seek medical attention!")
     else:
         print("Blood pressure is normal")
