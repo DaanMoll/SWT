@@ -7,11 +7,10 @@ import random
 
 
 def heart(number):
-
     if (number >= 60 and number <= 100):
         print("Normal heart rate")
     elif (number >= 40 and number <= 59):
-        print("Normal heart rate")
+        print("Normal heart rate for active individuals")
     elif (number <= 39):
         print("WARNING! Heart rate is low")
     elif (number >= 100 and number <= 120):
@@ -23,7 +22,6 @@ def heart(number):
 
 
 def oxygen(number):
-
     if number >= 95:
         print("Normal oxygen")
     elif (number < 95 and number >= 85):
