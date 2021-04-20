@@ -7,11 +7,10 @@ import random
 
 
 def heart(number):
-
     if (number >= 60 and number <= 100):
         print("Normal heart rate")
     elif (number >= 40 and number <= 59):
-        print("Normal heart rate")
+        print("Normal heart rate for active individuals")
     elif (number <= 39):
         print("WARNING! Heart rate is low")
     elif (number >= 100 and number <= 120):
@@ -23,7 +22,6 @@ def heart(number):
 
 
 def oxygen(number):
-
     if number >= 95:
         print("Normal oxygen")
     elif (number < 95 and number >= 85):
@@ -48,19 +46,23 @@ def blood_pressure(number):
         print("WARNING! Low bloodpressure! seek medical attention!")
     elif first >= 140 and second >= 90:
         print("WARNING! High bloodpressure! Seek medical attention!")
+    elif first >= 140 and second <= 90 and second >= 60:
+        print("Isolated systolic hypertension! Normal for older people, but further tests should be done.")
     else:
         print("Blood pressure is normal")
     pass
 
 
 if __name__ == '__main__':
-    pulse = random.randint(30, 150)
-    o2 = random.randint(75, 100)
-    blood_p = "120/80"
-
-    print("Random heart rate number: ", pulse)
+    #pulse = random.randint(30, 150)
+    pulse = int(input("Add pulse number (e.g. 70): "))
+    #o2 = random.randint(75, 100)
+    o2 = int(input("Add oxygen number (e.g. 96): "))
+    #blood_p = str(random.randint(30, 250)) + "/" + str(random.randint(30, 160))
+    blood_p = input("Add blood pressure number (e.g. 100/80): ")
+    print("Patient's heart rate number is: ", pulse)
     heart(pulse)
-    print("Random oxygen number: ", o2)
+    print("Patient's oxygen number is: ", o2)
     oxygen(o2)
-    print("Blood pressure: ", blood_p)
+    print("Patient's blood pressure is: ", blood_p)
     blood_pressure(blood_p)
