@@ -58,6 +58,10 @@ if __name__ == '__main__':
     pulse = int(input("Add pulse number (e.g. 70): "))
     #o2 = random.randint(75, 100)
     o2 = int(input("Add oxygen number (e.g. 96): "))
+    if o2 > 100:
+        while o2 >100:
+            print("The oxygen number cannot be greater than 100.")
+            o2 = int(input("Add oxygen number (e.g. 96): "))
     #blood_p = str(random.randint(30, 250)) + "/" + str(random.randint(30, 160))
     blood_p = input("Add blood pressure number (e.g. 100/80): ")
     print("Patient's heart rate number is: ", pulse)
