@@ -35,21 +35,26 @@ def blood_pressure(number):
 
     first = int(numbers[0])
     second = int(numbers[1])
-
-    """
-    can it be 100/50? is that a thing or are they correlated?
-    from reading online i think they are correlated
-    but still, check if valid input?
-    """
-
+    
     if first < 90 and second < 60:
-        print("WARNING! Low blood pressure! seek medical attention!")
+        print("WARNING! Low bloodpressure! seek medical attention!")
+        if first - second > 60:
+            print("WARNING! Wide pulse pressure! Seek medical attention!")
     elif first > 140 and second > 90:
-        print("WARNING! High blood pressure! Seek medical attention!")
+        print("WARNING! High bloodpressure! Seek medical attention!")
+        if first - second > 60:
+            print("WARNING! Wide pulse pressure! Seek medical attention!")
     elif first > 140 and second <= 90 and second >= 60:
         print("Isolated systolic hypertension! Normal for older people, but further tests should be done.")
-    else:
+        if first - second > 60:
+            print("WARNING! Wide pulse pressure! Seek medical attention!")
+    elif first <= 140 and first >= 90 and second <= 90 and second >= 60:
         print("Blood pressure is normal.")
+        if first - second > 60:
+            print("WARNING! Wide pulse pressure! Seek medical attention!")
+    else:
+        if first - second > 60:
+            print("WARNING! Wide pulse pressure! Seek medical attention!")
     pass
 
 
