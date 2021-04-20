@@ -8,24 +8,24 @@ import random
 
 def heart(number):
     if (number >= 60 and number <= 100):
-        print("Normal heart rate")
+        print("Normal heart rate.")
     elif (number >= 40 and number <= 59):
-        print("Heart rate is low, but it can be normal for active individuals")
+        print("Heart rate is low, but it can be normal for active individuals.")
     elif (number <= 39):
-        print("WARNING! Heart rate is low")
-    elif (number >= 100 and number <= 120):
-        print("WARNING! Heart rates have increased")
+        print("WARNING! Heart rate is low.")
+    elif (number >= 101 and number <= 120):
+        print("WARNING! Heart rates have increased.")
     elif (number > 120 and number <= 140):
-        print("WARNING! Heart rate is constantly increasing")
+        print("WARNING! Heart rate is constantly increasing.")
     elif number > 140:
-        print("Warning, the situation is critical!!")
+        print("Warning, the situation is critical!! The heart rate is extremely high!!")
 
 
 def oxygen(number):
     if number >= 95:
         print("Normal oxygen")
     elif (number < 95 and number >= 85):
-        print("WARNING! Oxygen in body NOT ENOUGH")
+        print("WARNING! Oxygen in body NOT ENOUGH!")
     else:
         print("WARNING! Situation is very critical.")
 
@@ -49,7 +49,7 @@ def blood_pressure(number):
     elif first >= 140 and second <= 90 and second >= 60:
         print("Isolated systolic hypertension! Normal for older people, but further tests should be done.")
     else:
-        print("Blood pressure is normal")
+        print("Blood pressure is normal.")
     pass
 
 
