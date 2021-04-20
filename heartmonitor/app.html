@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://d3js.org/d3.v6.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Monitor</title>
+</head>
+  <style>
+    body {
+        margin: 10px;
+        background-color: gray;
+        text-align: center;
+    }
+
+    .canvas {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #242424;
+        width: 900px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .stats-monitor {
+        color: white;
+        color: lightgray;
+        padding: 20px 0 50px 0;
+    }
+    .stats-summary {
+        padding: 0 0 10px 0;
+        font-size: 20px;
+    }
+    .stats {
+        float: left;
+        width: 33%;
+    }
+
+    .monitor {
+        margin: 0 10px 10px 0;
+    }
+    svg {
+        height: 100px;
+    }
+    .line {
+        stroke: green;
+        stroke-width: 1.5;
+        fill: none;
+    }
+    .faded {
+        opacity: 0.25;
+    }
+
+    #blood-monitor-plot .line {
+        stroke: darkred;
+    }
+    #oxygen-monitor-plot .line {
+        stroke: steelblue;
+    }
+  </style>
+<body>
+<div ng-app="myApp" ng-controller="appCtrl" align="center">
+    <div class="canvas">
+        <div class="stats-monitor">
+            <div class="stats-summary">Stats: Normal</div>
+            <div class="stats">Heart Rate: Normal</div>
+            <div class="stats">Oxygen Level: Normal</div>
+            <div class="stats">Blood Pressure: Normal</div>
+        </div>
+        <div class="monitor" style="display: flex;">
+            <div id="heart-monitor">
+                <svg id="heart-monitor-plot" width="700"></svg>
+            </div>
+            <h2 id="heart-rate" style="color:green">{{heartRate}} Hz | Heart rate</h2>
+        </div>
+        <div class="monitor" style="display: flex;">
+            <div id="oxygen-monitor">
+                <svg id="oxygen-monitor-plot" width="700"></svg>
+            </div>
+            <h2 id="oxygen-rate" style="color:steelblue">99% | 0<sub>2</sub></h2>
+        </div>
+        <div class="monitor" style="display: flex;">
+            <div id="blood-monitor">
+                <svg id="blood-monitor-plot" width="700"></svg>
+            </div>
+            <h2 id="bp" style="color:darkred">108/68 | BP</h2>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+
+
+
+var app = angular.module("myApp", []); 
+app.controller("appCtrl", function($scope) {
+
+    function drawAxes(svg, margin, width, height, x, y) {
+        svg.append("g")
+            .attr("class", "axis axis--x")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x)); // Add X Axis
+
+        svg.append("g")
+            .attr("class", "axis axis--y")
+            .call(d3.axisLeft(y)); // Add Y Axis
+        
+        svg.append("text")
+                    .attr("text-anchor", "middle")
+                    .style("font-size", "14px")
+                    .attr("transform", "translate("+ (margin.left - 94 ) +","+(height/2)+")rotate(-90)")  
+                    .text("value ( Thousands ) "); // Y Axis Label
+
+        svg.append("text")
+                    .style("font-size", "14px")
+                    .attr("text-anchor", "middle") 
+                    .attr("transform", "translate("+ (width/2) +","+(height-(margin.bottom -74))+")")
+                    .text("Date"); // X Axis Labels
+    
+        svg.append("text")
+                .attr("x", (width / 2))             
+                .attr("y", 20 - (margin.top / 2))
+                .attr("text-anchor", "middle")  
+                .style("font-size", "16px") 
+                .text("Monitor"); // Chart Title
+
+    }
+
+    function drawLine(dataset, canvasId){
+
+        const checkElem = document.getElementById(canvasId + "-plot");
+        if(checkElem){
+            checkElem.parentElement.removeChild(checkElem) // Delete previous graph
+        }
+
+        // Calculate Margins and canvas dimensions
+        var margin = {top: 0, right: 0, bottom: 0, left: 0},
+            width = 700 - margin.left - margin.right,
+            height = 80 - margin.top - margin.bottom;
+
+        //Parsers and Formaters
+        var parseTime = d3.timeParse("%d/%m/%Y");
+        var formatTime = d3.timeFormat("%a/%b/%Y");
+
+        // Scales
+        var x = d3.scaleLinear()
+            .range([0, width]);
+
+        var y = d3.scaleLinear()
+            .range([height, 0]);
+
+        // Line
+        var line = d3.line()
+            .x((d)=>{ return x(d.date); })
+            .y((d)=>{ return y(d.value); })
+
+
+        var svg = d3.select("#" + canvasId).append("svg")
+            .attr("id", canvasId + "-plot")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        
+        //Arguments for axes : Ranges for X, y  
+        x.domain(d3.extent(dataset, function(d) { return (d.date); }));
+        y.domain(d3.extent(dataset, function(d) { return d.value; }));
+
+        // drawAxes(svg, margin, width, height, x, y); // Axes are not requred for the monitors
+        
+        // Plot Lines:
+        svg.append("path")
+            .datum(dataset)
+            .attr("class", "line")
+            .attr("d", line);
+
+        // Plots for previous cycle 
+        let index;
+        dataset.some( (d,i) => { if(d.value === undefined) {index = i; return true;}})
+        if (index){
+            const oldSet = dataset.slice(index + 2)
+            svg.append("path")
+                .datum(oldSet)
+                .attr("class", "line faded")
+                .attr("d", line);
+        }
+
+    }
+
+    $scope.heartRate = 90;
+    const speed = 0.1;
+    const heartRate = $scope.heartRate;
+
+    function getValues(type = '', heartRate) {
+        const bucket = Math.floor(60 * 15/heartRate);
+        console.log('bucket', bucket)
+        const values = new Array(bucket).fill(2);
+        values[Math.floor(bucket*2/10) - 1] = 7;
+        values[Math.floor(bucket*3/10) - 1] = 14;
+        values[Math.floor(bucket*4/10) - 1] = 2;
+        values[Math.floor(bucket*5/10) - 1] = 2;
+        values[Math.floor(bucket*6/10) - 1] = 4;
+        values[Math.floor(bucket*7/10) - 1] = 4;
+        values[Math.floor(bucket*8/10) - 1] = 12;
+        values[Math.floor(bucket*9/10) - 1] = 4;
+        
+        values[0] = 0;
+        values[bucket - 1] = 60;
+
+        console.log('plot values', values)
+        return values;
+    }
+
+    function renderMonitor(monitorId, points){
+        let dataset= [];   
+        var last = 0
+        const plotLimit = 99;
+        console.log('plotLimit', plotLimit)
+        let counter_heart = 0;
+        function updatePlots() {
+            plot = {date: counter_heart +1 , value: 0}
+            plot.value = points[last];
+            counter_heart++;
+            last = (last + 1)% (points.length);
+            if (counter_heart <= plotLimit)
+                dataset.push(plot);
+            else {
+                const zero_plot = {value: undefined};
+                const plotIndex = counter_heart%plotLimit -1;
+                dataset = dataset.slice(0,plotIndex + 1).concat([plot, zero_plot]).concat(dataset.slice(plotIndex + 3));
+            }
+            dataset.forEach((d, i) => d.date = i)
+            let graphData = dataset.concat({date: plotLimit, value: null});
+            graphData.push({date: plotLimit + 1, value: 60});
+            drawLine(graphData, monitorId);
+        }
+        var monitor_heart = setInterval(updatePlots, 90);
+        
+        // For Debugging - stop the interval timer
+        // setTimeout(()=> {
+        //     clearInterval(monitor_heart);
+        //     console.log('Monitoring Done!')
+        // }, 5000);
+    }
+    renderMonitor('heart-monitor', getValues('heartRate', heartRate));
+
+    const bp = [12, 0 ,8 , 18, 50, 30, 14 ]
+    renderMonitor('blood-monitor', bp);
+
+    const oxygenPlots = [0, 4, 8 ,12, 20, 32, 36, 32, 20, 12, 8, 4, 0 ]
+    renderMonitor('oxygen-monitor', oxygenPlots);
+})
+</script>
