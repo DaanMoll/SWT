@@ -10,7 +10,7 @@ def heart(number):
     if (number >= 60 and number <= 100):
         print("Normal heart rate")
     elif (number >= 40 and number <= 59):
-        print("Normal heart rate for active individuals")
+        print("Heart rate is low, but it can be normal for active individuals")
     elif (number <= 39):
         print("WARNING! Heart rate is low")
     elif (number >= 100 and number <= 120):
