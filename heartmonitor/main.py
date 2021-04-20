@@ -43,9 +43,9 @@ def blood_pressure(number):
     """
 
     if first < 90 and second < 60:
-        print("WARNING! Low bloodpressure! seek medical attention!")
+        print("WARNING! Low blood pressure! seek medical attention!")
     elif first > 140 and second > 90:
-        print("WARNING! High bloodpressure! Seek medical attention!")
+        print("WARNING! High blood pressure! Seek medical attention!")
     elif first > 140 and second <= 90 and second >= 60:
         print("Isolated systolic hypertension! Normal for older people, but further tests should be done.")
     else:
