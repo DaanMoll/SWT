@@ -20,14 +20,6 @@ def heart(number):
         print("Warning! The situation is critical!! The heart rate is extremely high!!")
 
 
-def oxygen(number):
-    if number >= 95:
-        print("Normal oxygen")
-    elif (number < 95 and number >= 85):
-        print("WARNING! Oxygen in body NOT ENOUGH!")
-    else:
-        print("WARNING! Situation is very critical.")
-
 def blood_pressure(number):
     numbers = number.split("/")
     print(numbers)
@@ -56,21 +48,29 @@ def blood_pressure(number):
             print("WARNING! Wide pulse pressure! Seek medical attention!")
     pass
 
+def oxygen(number):
+    if number >= 95:
+        print("Normal oxygen")
+    elif (number < 95 and number >= 85):
+        print("WARNING! Oxygen in body NOT ENOUGH!")
+    else:
+        print("WARNING! Situation is very critical.")
+
 
 if __name__ == '__main__':
     #pulse = random.randint(30, 150)
     pulse = int(input("Add pulse number (e.g. 70): "))
+    #blood_p = str(random.randint(30, 250)) + "/" + str(random.randint(30, 160))
+    blood_p = input("Add blood pressure number (e.g. 100/80): ")
     #o2 = random.randint(75, 100)
     o2 = int(input("Add oxygen number (e.g. 96): "))
     if o2 > 100:
         while o2 >100:
             print("The oxygen number cannot be greater than 100.")
             o2 = int(input("Add oxygen number (e.g. 96): "))
-    #blood_p = str(random.randint(30, 250)) + "/" + str(random.randint(30, 160))
-    blood_p = input("Add blood pressure number (e.g. 100/80): ")
     print("Patient's heart rate number is: ", pulse)
     heart(pulse)
-    print("Patient's oxygen number is: ", o2)
-    oxygen(o2)
     print("Patient's blood pressure is: ", blood_p)
     blood_pressure(blood_p)
+    print("Patient's oxygen number is: ", o2)
+    oxygen(o2)
