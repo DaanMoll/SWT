@@ -4,7 +4,6 @@
 
 import random
 
-
 def heart(number):
     if (number >= 60 and number <= 100):
         print("Normal heart rate.")
@@ -19,7 +18,7 @@ def heart(number):
     elif number > 140:
         print("Warning! The situation is critical!! The heart rate is extremely high!!")
 
-
+        
 def blood_pressure(number):
     numbers = number.split("/")
     print(numbers)
@@ -47,6 +46,7 @@ def blood_pressure(number):
         if first - second > 60:
             print("WARNING! Wide pulse pressure! Seek medical attention!")
     pass
+
 
 def oxygen(number):
     if number >= 95:
