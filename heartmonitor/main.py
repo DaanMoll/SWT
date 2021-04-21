@@ -70,17 +70,18 @@ if __name__ == '__main__':
     if pulse.isnumeric():
         pulse = int(pulse)
 
-    o2 = input("Add oxygen number (e.g. 96): ")
-    if not (o2.isnumeric()):
-        while not (o2.isnumeric()):
+    o2 = ""
+    while not(o2.isnumeric()):
+        o2 = input("Add oxygen number (e.g. 96): ")
+        if o2.isnumeric():
+            o2int = int(o2)
+            if o2int > 100:
+                o2 = ""
+                print("The oxygen number should be a positive integer number equal or smaller than 100.")
+        else:
             print("The oxygen number should be a positive integer number equal or smaller than 100.")
-            o2 = input("Add oxygen number (e.g. 96): ")
-    if o2.isnumeric():
-        o2 = int(o2)
-        while o2 > 100:
-            print("The oxygen number should be a positive integer number equal or smaller than 100.")
-            o2 = input("Add oxygen number (e.g. 96): ")
-            o2 = int(o2)
+
+    o2 = int(o2)
 
     blood_p = ""
     while not(blood_p.__contains__("/")):
