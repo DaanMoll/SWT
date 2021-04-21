@@ -18,7 +18,7 @@ def heart(number):
     elif (number > 120 and number <= 140):
         print("WARNING! Heart rate is constantly increasing.")
     elif number > 140:
-        print("Warning, the situation is critical!! The heart rate is extremely high!!")
+        print("Warning! The situation is critical!! The heart rate is extremely high!!")
 
 
 def oxygen(number):
