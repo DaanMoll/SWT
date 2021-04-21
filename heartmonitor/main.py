@@ -1,7 +1,6 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# This program simulates the controller of a heart monitoring device.
+# It reads the pulse, the oxygen level as well as the blood pressure.
+# Its main purpose is to raise alarms if there is something seriously wrong.
 
 import random
 
