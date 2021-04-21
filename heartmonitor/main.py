@@ -58,7 +58,7 @@ def oxygen(number):
     elif (number < 95 and number >= 85):
         print("WARNING! Oxygen in body NOT ENOUGH!")
     else:
-        print("WARNING! Situation is very critical.")
+        print("WARNING! Situation is very critical oxygen in body is NOT ENOUGH!!!.")
 
 
 if __name__ == '__main__':
