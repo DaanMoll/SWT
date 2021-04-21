@@ -26,7 +26,9 @@ def blood_pressure(number):
     first = int(numbers[0])
     second = int(numbers[1])
     
-    if first < 90 and second < 60:
+    if first <= second:
+        print("WARNING! Highly unusual blood pressure!!! Seek immediate medical attention!")
+    elif first < 90 and second < 60:
         print("WARNING! Low bloodpressure! seek medical attention!")
         if first - second > 60:
             print("WARNING! Wide pulse pressure! Seek medical attention!")
