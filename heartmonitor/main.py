@@ -39,7 +39,7 @@ def blood_pressure(number):
         if first - second > 60:
             print("WARNING! Wide pulse pressure! Seek medical attention!")
     elif first <= 140 and first >= 90 and second < 60:
-        print("Low diastolic blood pressure! Seek medical attention.")
+        print("Isolated diastolic blood pressure! Seek medical attention.")
         if first - second > 60:
             print("WARNING! Wide pulse pressure! Seek medical attention!")
     elif first <= 140 and first >= 90 and second <= 90 and second >= 60:
