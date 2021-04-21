@@ -27,6 +27,7 @@
         color: white;
         color: lightgray;
         padding: 20px 0 50px 0;
+        border-bottom: 1px solid white;
     }
     .stats-summary {
         padding: 0 0 10px 0;
@@ -38,7 +39,7 @@
     }
 
     .monitor {
-        margin: 0 10px 10px 0;
+        margin: 20px 10px 10px 0;
     }
     svg {
         height: 100px;
@@ -58,6 +59,37 @@
     #oxygen-monitor-plot .line {
         stroke: steelblue;
     }
+
+    .console-inputs {
+        color: lightblue;
+        padding-top: 20px;
+        display: flex;
+        border-top: 1px solid white;
+        
+        margin-top: 6px;
+        background: #242424;
+        width: 900px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .inputbox {
+        width: 33%;
+        color: lightgray;
+    }
+    .inputbox input {
+        color: white;
+        background-color: #242424;
+        border: 1px solid lightgray;
+        padding: 5px;
+        width: 75%;
+        border-radius: 5px;
+    }
+    button {
+        height: 26px;
+        padding: 5px;
+        margin-top: 18px;
+    }
   </style>
 <body>
 <div ng-app="myApp" ng-controller="appCtrl" align="center">
@@ -72,20 +104,32 @@
             <div id="heart-monitor">
                 <svg id="heart-monitor-plot" width="700"></svg>
             </div>
-            <h2 id="heart-rate" style="color:green">{{heartRate}} Hz | Heart rate</h2>
+            <h2 id="heart-rate" style="color:green">{{heartRate ? heartRate + 'Hz | ' : ''}} Heart </h2>
         </div>
         <div class="monitor" style="display: flex;">
             <div id="oxygen-monitor">
                 <svg id="oxygen-monitor-plot" width="700"></svg>
             </div>
-            <h2 id="oxygen-rate" style="color:steelblue">99% | 0<sub>2</sub></h2>
+            <h2 id="oxygen-rate" style="color:steelblue">{{oxygen ? oxygen + '% | ' : ''}}  0<sub>2</sub></h2>
         </div>
         <div class="monitor" style="display: flex;">
             <div id="blood-monitor">
                 <svg id="blood-monitor-plot" width="700"></svg>
             </div>
-            <h2 id="bp" style="color:darkred">108/68 | BP</h2>
+            <h2 id="bp" style="color:darkred">{{bp ? bp + ' | ' : ''}} BP</h2>
         </div>
+    </div>
+    <div class="console-inputs">
+        <div class="inputbox">
+            <label>Pulse</label><br/><input type="number" ng-model="pulseInput" placeholder="Enter pulse (e.g. 92)"/>
+        </div>
+        <div class="inputbox">
+            <label>Oxygen Saturation</label><br/><input type="number" ng-model="oxygenInput" placeholder="Enter oxygen percentage (e.g. 98)"/>
+        </div>
+        <div class="inputbox">
+            <label>Blood Pressure</label><br/><input ng-model="bpInput" placeholder="Enter BP (e.g. 100/80)"/>
+        </div>
+        <button ng-click="trigger()" ng-disabled="!pulseInput || !oxygenInput || !bpInput">Enter</button>
     </div>
 </div>
 </body>
@@ -189,7 +233,6 @@ app.controller("appCtrl", function($scope) {
 
     }
 
-    $scope.heartRate = 90;
     const speed = 0.1;
     const heartRate = $scope.heartRate;
 
@@ -213,7 +256,16 @@ app.controller("appCtrl", function($scope) {
         return values;
     }
 
-    function renderMonitor(monitorId, points){
+    function getBPValues(bucketSize, low, high) {
+        const diff = high - low;
+        const values = new Array(bucketSize).fill(low).map( (v, i) => {
+            return high - ((i+3) * diff/bucketSize)
+        })
+        return values;
+    }
+
+
+    function renderMonitor(monitorId, points, maxValue = 60){
         let dataset= [];   
         var last = 0
         const plotLimit = 99;
@@ -233,7 +285,7 @@ app.controller("appCtrl", function($scope) {
             }
             dataset.forEach((d, i) => d.date = i)
             let graphData = dataset.concat({date: plotLimit, value: null});
-            graphData.push({date: plotLimit + 1, value: 60});
+            graphData.push({date: plotLimit + 1, value: maxValue});
             drawLine(graphData, monitorId);
         }
         var monitor_heart = setInterval(updatePlots, 90);
@@ -243,13 +295,36 @@ app.controller("appCtrl", function($scope) {
         //     clearInterval(monitor_heart);
         //     console.log('Monitoring Done!')
         // }, 5000);
+
+        return monitor_heart;
     }
-    renderMonitor('heart-monitor', getValues('heartRate', heartRate));
 
-    const bp = [12, 0 ,8 , 18, 50, 30, 14 ]
-    renderMonitor('blood-monitor', bp);
+    let heartCycle, oxygenCycle, bpCycle;
 
-    const oxygenPlots = [0, 4, 8 ,12, 20, 32, 36, 32, 20, 12, 8, 4, 0 ]
-    renderMonitor('oxygen-monitor', oxygenPlots);
+    $scope.trigger = function() {
+        
+        const bloodPressures = $scope.bpInput.split('/');
+        if (!bloodPressures[1]) return;
+        
+        $scope.heartRate = $scope.pulseInput;
+        $scope.oxygen = $scope.oxygenInput;
+        $scope.bp = $scope.bpInput;        
+
+        clearInterval(heartCycle);
+        clearInterval(oxygenCycle);
+        clearInterval(bpCycle);
+
+        heartValues = getValues('heartRate', $scope.heartRate);
+        heartCycle = renderMonitor('heart-monitor', heartValues);
+
+        const low = parseInt(bloodPressures[1]), high = parseInt(bloodPressures[0]);
+        const bp = getBPValues(heartValues.length, low, high)
+        console.log('bp', bp) 
+        oxygenCycle = renderMonitor('blood-monitor', bp, low);
+
+        const oxygenPlots = [0, 2, 4, 6, 8, 10, 12, 16, 20, 26, 32, 34, 36, 34, 32, 26, 20, 16, 12, 10, 8, 6, 4, 2, 0 ]
+        bpCycle = renderMonitor('oxygen-monitor', oxygenPlots, 40);
+    }
+
 })
 </script>
