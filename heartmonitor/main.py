@@ -62,19 +62,47 @@ def oxygen(number):
 
 
 if __name__ == '__main__':
-    #pulse = random.randint(30, 150)
-    pulse = int(input("Add pulse number (e.g. 70): "))
-    #blood_p = str(random.randint(30, 250)) + "/" + str(random.randint(30, 160))
-    blood_p = input("Add blood pressure number (e.g. 100/80): ")
-    #o2 = random.randint(75, 100)
-    o2 = int(input("Add oxygen number (e.g. 96): "))
-    if o2 > 100:
-        while o2 >100:
-            print("The oxygen number cannot be greater than 100.")
-            o2 = int(input("Add oxygen number (e.g. 96): "))
-    print("Patient's heart rate number is: ", pulse)
+    pulse = input("Add pulse number (e.g. 70): ")
+    if not(pulse.isnumeric()):
+        while not(pulse.isnumeric()):
+            print("The pulse number should be a positive integer number.")
+            pulse = input("Add pulse number (e.g. 70): ")
+    if pulse.isnumeric():
+        pulse = int(pulse)
+
+    o2 = input("Add oxygen number (e.g. 96): ")
+    if not (o2.isnumeric()):
+        while not (o2.isnumeric()):
+            print("The oxygen number should be a positive integer number equal or smaller than 100.")
+            o2 = input("Add oxygen number (e.g. 96): ")
+    if o2.isnumeric():
+        o2 = int(o2)
+        while o2 > 100:
+            print("The oxygen number should be a positive integer number equal or smaller than 100.")
+            o2 = input("Add oxygen number (e.g. 96): ")
+            o2 = int(o2)
+
+    blood_p = ""
+    while not(blood_p.__contains__("/")):
+        blood_p = input("Add blood pressure number (e.g. 100/80): ")
+        if blood_p.__contains__("/"):
+            numbers = blood_p.split("/")
+            first = numbers[0]
+            second = numbers[1]
+            if first.isnumeric() and second.isnumeric():
+                first = int(first)
+                second = int(second)
+                if first <= second or first < 0 or second < 0:
+                    blood_p = ""
+                    print("The systolic blood pressure has to be higher than the diastolic blood pressure")
+            else:
+                blood_p = ""
+                print("The blood pressure should be positive numbers")
+        else:
+            print("The blood pressure number should be two positive numbers with a dash '/' between them. e.g. 100/80")
+
     heart(pulse)
-    print("Patient's blood pressure is: ", blood_p)
-    blood_pressure(blood_p)
-    print("Patient's oxygen number is: ", o2)
+
     oxygen(o2)
+
+    blood_pressure(blood_p)
