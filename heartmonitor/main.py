@@ -84,11 +84,17 @@ def oxygen(number):
     else:
         print("WARNING! Situation is very critical. Oxygen in body is NOT ENOUGH!!!")
 
-
-if __name__ == '__main__':
+def ask_input():
     print()
+    print("In order to exit the program type q or quit")
+    print()
+
+    stop = ["q", "quit"]
     
     pulse = input("Enter heart rate per minute, (e.g. 70): ")
+    if pulse.lower() in stop:
+        return False
+
     if not (pulse.isnumeric()):
         while not(pulse.isnumeric()):
             print("The pulse number should be a positive integer number.")
@@ -100,6 +106,10 @@ if __name__ == '__main__':
     o2 = ""
     while not(o2.isnumeric()):
         o2 = input("Enter Oxygen level in percentages (e.g. 96): ")
+        
+        if o2.lower() in stop:
+            return False
+
         if o2.isnumeric():
             o2int = int(o2)
             if o2int > 100:
@@ -113,6 +123,9 @@ if __name__ == '__main__':
     blood_p = ""
     while not(blood_p.__contains__("/")):
         blood_p = input("Enter blood pressure (e.g. 120/80): ")
+
+        if blood_p.lower() in stop:
+            return False
 
         if blood_p.__contains__("/"):
             numbers = blood_p.split("/")
@@ -140,3 +153,10 @@ if __name__ == '__main__':
     blood_pressure(blood_p)
 
     print()
+    return True
+
+if __name__ == '__main__':
+    print("This program will continously prompt for the values of the individuals heart rate, oxygen level and blood pressure.")
+    
+    while ask_input():
+        pass
