@@ -6,7 +6,7 @@ import random
 
 def heart(number):
     if (number >= 60 and number <= 100):
-        print("Normal heart rate.")
+        print("Heart rate is normal.")
     elif (number >= 40 and number <= 59):
         print("Heart rate is low, but it can be normal for active individuals.")
     elif (number <= 39):
@@ -53,56 +53,64 @@ def blood_pressure(number):
 
 def oxygen(number):
     if number >= 95:
-        print("Normal oxygen")
+        print("Oxygen level is normal.")
     elif (number < 95 and number >= 85):
-        print("WARNING! Oxygen in body NOT ENOUGH!")
+        print("WARNING! Not enough Oxygen in blood!")
     else:
         print("WARNING! Situation is very critical.")
 
 
 if __name__ == '__main__':
-    #pulse = random.randint(30, 150)
-    while True:
-        try:
-            pulse = int(input("Enter heart rate per minute, (e.g. 70): "))
-            break
-        except ValueError:
-            print("Enter an integer please.")
-
+    print()
     
-
-    #blood_p = str(random.randint(30, 250)) + "/" + str(random.randint(30, 160))
-    blood_p = input("Enter blood pressure (e.g. 120/80): ")
+    pulse = input("Enter heart rate per minute, (e.g. 70): ")
+    if not (pulse.isnumeric()):
+        while not(pulse.isnumeric()):
+            print("The pulse number should be a positive integer number.")
+            pulse = input("Enter heart rate per minute, (e.g. 70): ")
     
-    numbers = blood_p.split("/")
-    while len(numbers) != 2 and isinstance(numbers[0], int) and isinstance(numbers[1], int):
+    if pulse.isnumeric():
+        pulse = int(pulse)
+
+    o2 = input("Enter Oxygen level in percentages (e.g. 96): ")
+    if not (o2.isnumeric()):
+        while not (o2.isnumeric()):
+            print("The oxygen number should be a positive integer number equal or smaller than 100.")
+            o2 = input("Enter Oxygen level in percentages (e.g. 96): ")
+    if o2.isnumeric():
+        o2 = int(o2)
+        while o2 > 100:
+            print("The oxygen number should be a positive integer number equal or smaller than 100.")
+            o2 = input("Enter Oxygen level in percentages (e.g. 96): ")
+            o2 = int(o2)
+
+    blood_p = ""
+    while not(blood_p.__contains__("/")):
         blood_p = input("Enter blood pressure (e.g. 120/80): ")
-        numbers = blood_p.split("/")
 
-    #o2 = random.randint(75, 100)
+        if blood_p.__contains__("/"):
+            numbers = blood_p.split("/")
+            first = numbers[0]
+            second = numbers[1]
 
-    
-    while True:
-        try:
-            o2 = int(input("Enter oxygen level in percentages (e.g. 96): "))
-            if o2 > 100:
-                while o2 > 100:
-                    print("The oxygen number cannot be greater than 100.")
-                    o2 = int(input("Add oxygen number (e.g. 96): "))
-            break
-        except ValueError:
-            print("Enter an integer lower or equal to 100 please.")
-
-    
+            if first.isnumeric() and second.isnumeric():
+                first = int(first)
+                second = int(second)
+                if first <= second or first < 0 or second < 0:
+                    blood_p = ""
+                    print("The systolic blood pressure has to be higher than the diastolic blood pressure")
+            else:
+                blood_p = ""
+                print("The blood pressure should be positive numbers")
+        else:
+            print("The blood pressure should be entered as two positive numbers with a dash '/' between them. e.g. 120/80")
 
     print()
-    print("Patient's heart rate is: ", pulse)
+
     heart(pulse)
 
-    print()
-    print("Patient's blood pressure is: ", blood_p)
+    oxygen(o2)
+
     blood_pressure(blood_p)
 
     print()
-    print("Patient's oxygen level is: ", o2)
-    oxygen(o2)
