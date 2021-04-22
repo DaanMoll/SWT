@@ -39,7 +39,7 @@ def blood_pressure(number):
     
     # low bloodpressure
     if first <= 90 and second <= 60:
-        print("WARNING! Low bloodpressure! seek medical attention!")
+        print("WARNING! Low blood pressure! seek medical attention!")
 
     # prehypertension between 120/80 and 140/90
     elif first > 120 and first < 140 and second > 80 and second < 90:
@@ -47,7 +47,7 @@ def blood_pressure(number):
     
     # high blood pressure over 140/90
     elif first >= 140 and second >= 90:
-        print("WARNING! High bloodpressure! Seek medical attention!")
+        print("WARNING! High blood pressure! Seek medical attention!")
 
     # high first number and normal second number
     elif first >= 140 and second >= 60 and second <= 90 :
