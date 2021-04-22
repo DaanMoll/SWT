@@ -16,7 +16,7 @@ def heart(number):
     
     # low heart rate
     elif (number <= 39):
-        print("WARNING! Heart rate is low. Seek medicial attention!")
+        print("WARNING! Heart rate is low. Seek medical attention!")
     
     # increasing heart rate
     elif (number >= 101 and number <= 120):
