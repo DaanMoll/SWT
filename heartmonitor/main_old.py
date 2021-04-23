@@ -51,9 +51,13 @@ def blood_pressure(number):
     elif first >= 140 and second >= 60 and second <= 90:
         print("Isolated systolic hypertension! Normal for older people, but further tests should be performed.")
 
-    # normal first number and high second number
+    # normal first number and low second number
     elif first > 90 and first < 140 and second < 60:
         print("Isolated diastolic blood pressure! Seek medical attention.")
+        
+    # normal first number and high second number
+    elif first > 90 and first < 140 and second > 80:
+        print("Diastolic blood pressure is high, which could be an indicator of heart disease or stroke. Seek medical attention.")
 
     # normal bloodpressure
     elif first >= 90 and first <= 120 and second >= 60 and second <= 80:
