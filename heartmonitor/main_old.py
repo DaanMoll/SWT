@@ -13,7 +13,7 @@ def heart(number):
         print("Heart rate is low, but it can be normal for active individuals.")
 
     # low heart rate
-    elif (number <= 39):
+    elif (number <= 39 and number > 10):
         print("WARNING! Heart rate is low. Seek medical attention!")
 
     # increasing heart rate
@@ -28,6 +28,10 @@ def heart(number):
     elif number > 140:
         print("Warning! The situation is critical!! The heart rate is extremely high! Seek medical attention!")
 
+    #pulse is extremely low
+    elif number <= 10:
+        print("WARNING!!! The heart rate is extremely low!! The patient might be dying! Seek immediate medical attention!!")
+
 
 def blood_pressure(number):
     numbers = number.split("/")
@@ -36,7 +40,7 @@ def blood_pressure(number):
     second = int(numbers[1])
 
     # low bloodpressure
-    if first <= 90 and second <= 60:
+    if first <= 90 and first > 10 and second <= 60 and second > 10:
         print("WARNING! Low blood pressure! seek medical attention!")
 
     # prehypertension between 120/80 and 140/90
@@ -52,7 +56,7 @@ def blood_pressure(number):
         print("Isolated systolic hypertension! Normal for older people, but further tests should be performed.")
 
     # normal first number and low second number
-    elif first > 90 and first < 140 and second < 60:
+    elif first > 90 and first < 140 and second < 60 and second > 10:
         print("Isolated diastolic blood pressure! Seek medical attention.")
 
     # normal first number and high second number
@@ -62,6 +66,10 @@ def blood_pressure(number):
     # normal bloodpressure
     elif first >= 90 and first <= 120 and second >= 60 and second <= 80:
         print("Blood pressure is normal.")
+
+    # Extremely low blood pressure
+    elif first <= 10 or second <= 10:
+        print("WARNING!!! The blood pressure is extremely low!! The patient might be dying! Seek immediate medical attention!!")
 
     # check difference between systolic and diastolic
     if first - second <= 20:
@@ -81,8 +89,12 @@ def oxygen(number):
         print("WARNING! Not enough Oxygen in blood!")
 
     # very low oxygen level
-    else:
+    elif number < 85 and number > 10:
         print("WARNING! Situation is very critical. Oxygen in body is NOT ENOUGH!!!")
+
+    # oxygen is extremely low
+    elif number <= 10:
+        print("WARNING!!! The heart rate is extremely low!! The patient might be dying! Seek immediate medical attention!!")
 
 
 def ask_input():
