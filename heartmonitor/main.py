@@ -173,7 +173,7 @@ def run_reading_loop(inp, out):
     zeroes_in_row = [0, 0, 0, 0]
 
     while True:
-        print("Please input the values for heart rate, oxygen and blood pressure. (e.g. 70 95 120/80)")
+        print("\nPlease input the values for heart rate, oxygen and blood pressure. (e.g. 70 95 120/80)")
         line = inp.readline()
         split = line.split()
 
