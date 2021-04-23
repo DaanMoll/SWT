@@ -112,6 +112,7 @@ def ask_input():
                     fixed = input("Type 'fixed' in order for it to be considered fixed.")
                     if fixed.__contains__("fixed"):
                         counter = 0
+                        print()
         else:
             print("The pulse should be a positive integer number equal or smaller than 300.")
             counter = counter + 1
@@ -120,6 +121,7 @@ def ask_input():
                 fixed = input("Type 'fixed' in order for it to be considered fixed.")
                 if fixed.__contains__("fixed"):
                     counter = 0
+                    print()
 
     pulse = int(pulse)
 
@@ -141,6 +143,7 @@ def ask_input():
                     fixed = input("Type 'fixed' in order for it to be considered fixed.")
                     if fixed.__contains__("fixed"):
                         counter = 0
+                        print()
         else:
             print("The oxygen number should be a positive integer number equal or smaller than 100.")
             counter = counter + 1
@@ -149,6 +152,7 @@ def ask_input():
                 fixed = input("Type 'fixed' in order for it to be considered fixed.")
                 if fixed.__contains__("fixed"):
                     counter = 0
+                    print()
 
     o2 = int(o2)
 
@@ -177,6 +181,7 @@ def ask_input():
                         fixed = input("Type 'fixed' in order for it to be considered fixed.")
                         if fixed.__contains__("fixed"):
                             counter = 0
+                            print()
                 #Check if the first number is smaller than 370 and the second number smaller than 360
                 elif first > 370 or second > 360:
                     blood_p = ""
@@ -187,6 +192,7 @@ def ask_input():
                         fixed = input("Type 'fixed' in order for it to be considered fixed.")
                         if fixed.__contains__("fixed"):
                             counter = 0
+                            print()
             else:
                 blood_p = ""
                 print("The blood pressure should be positive numbers")
@@ -196,6 +202,7 @@ def ask_input():
                     fixed = input("Type 'fixed' in order for it to be considered fixed.")
                     if fixed.__contains__("fixed"):
                         counter = 0
+                        print()
         else:
             print(
                 "The blood pressure should be entered as two positive numbers with a dash '/' between them. e.g. 120/80")
@@ -205,6 +212,7 @@ def ask_input():
                 fixed = input("Type 'fixed' in order for it to be considered fixed.")
                 if fixed.__contains__("fixed"):
                     counter = 0
+                    print()
 
     print()
 
