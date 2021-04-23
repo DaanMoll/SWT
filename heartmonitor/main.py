@@ -293,6 +293,7 @@ def main():
             break
 
     if mode == "console":
+        print("Please input the values for heart rate, oxygen and blood pressure. (e.g. 70 95 120/80)")
         inp = sys.stdin
         out = sys.stdout
 
