@@ -1,4 +1,6 @@
-import random
+# This program simulates the controller of a heart monitoring device.
+# It reads the pulse, the oxygen level as well as the blood pressure.
+# Its main purpose is to raise alarms if there is something seriously wrong.
 
 
 def heart(number):
