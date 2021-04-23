@@ -54,7 +54,7 @@ def blood_pressure(number):
     # normal first number and low second number
     elif first > 90 and first < 140 and second < 60:
         print("Isolated diastolic blood pressure! Seek medical attention.")
-        
+
     # normal first number and high second number
     elif first > 90 and first < 140 and second > 80:
         print("Diastolic blood pressure is high, which could be an indicator of heart disease or stroke. Seek medical attention.")
@@ -94,23 +94,34 @@ def ask_input():
 
     counter = 0
 
-    pulse = input("Enter heart rate per minute, (e.g. 70): ")
-    if pulse.lower() in stop:
-        return False
+    pulse = ""
+    while not (pulse.isnumeric()):
+        pulse = input("Enter heart rate per minute, (e.g. 70): ")
 
-    if not (pulse.isnumeric()):
-        while not (pulse.isnumeric()):
-            print("The pulse number should be a positive integer number.")
+        if pulse.lower() in stop:
+            return False
+
+        if pulse.isnumeric():
+            pulseint = int(pulse)
+            if pulseint > 300:
+                pulse = ""
+                print("The pulse should be a positive integer number equal or smaller than 300.")
+                counter = counter + 1
+                while counter == 1:
+                    print("The sensor gives wrong data and seems to be broken.")
+                    fixed = input("Type 'fixed' in order for it to be considered fixed.")
+                    if fixed.__contains__("fixed"):
+                        counter = 0
+        else:
+            print("The pulse should be a positive integer number equal or smaller than 300.")
             counter = counter + 1
             while counter == 1:
                 print("The sensor gives wrong data and seems to be broken.")
                 fixed = input("Type 'fixed' in order for it to be considered fixed.")
                 if fixed.__contains__("fixed"):
                     counter = 0
-            pulse = input("Enter heart rate per minute, (e.g. 70): ")
 
-    if pulse.isnumeric():
-        pulse = int(pulse)
+    pulse = int(pulse)
 
     o2 = ""
     while not (o2.isnumeric()):
@@ -156,9 +167,20 @@ def ask_input():
             if first.isnumeric() and second.isnumeric():
                 first = int(first)
                 second = int(second)
+                # Check that the first number is higher than the second
                 if first <= second or first < 0 or second < 0:
                     blood_p = ""
                     print("The systolic blood pressure has to be higher than the diastolic blood pressure")
+                    counter = counter + 1
+                    while counter == 1:
+                        print("The sensor gives wrong data and seems to be broken.")
+                        fixed = input("Type 'fixed' in order for it to be considered fixed.")
+                        if fixed.__contains__("fixed"):
+                            counter = 0
+                #Check if the first number is smaller than 370 and the second number smaller than 360
+                elif first > 370 or second > 360:
+                    blood_p = ""
+                    print("The systolic blood pressure cannot be higher than 370 or the diastolic blood pressure cannot be higher than 360.")
                     counter = counter + 1
                     while counter == 1:
                         print("The sensor gives wrong data and seems to be broken.")
