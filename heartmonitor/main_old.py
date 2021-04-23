@@ -72,7 +72,7 @@ def blood_pressure(number):
         print("WARNING!!! The blood pressure is extremely low!! The patient might be dying! Seek immediate medical attention!!")
 
     # check difference between systolic and diastolic
-    if first - second <= 20:
+    if first - second <= 40:
         print("Low pulse pressure! It can be a sign of a poorly functioning heart! Seek medical attention")
     if first - second > 60:
         print("WARNING! Wide pulse pressure! Seek medical attention!")
