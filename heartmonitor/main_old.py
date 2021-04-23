@@ -94,7 +94,7 @@ def oxygen(number):
 
     # oxygen is extremely low
     elif number <= 10:
-        print("WARNING!!! The oxygen level in body is extremely low!! The patient might be dying! Seek immediate medical attention!!")
+        print("WARNING!!! The oxygen level in the body is extremely low!! The patient might be dying! Seek immediate medical attention!!")
 
 
 def ask_input():
