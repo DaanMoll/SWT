@@ -1,3 +1,3 @@
 clear all 
 
-car = LegoCar(20);
+car = LegoCar(30);

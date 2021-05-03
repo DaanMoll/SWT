@@ -1,0 +1,27 @@
+clear all 
+
+car = LegoCar(20);
+disp("Move car around to check if sensors work")
+
+while true
+    int_left = car.cs_left.readLightIntensity('reflected');
+    int_right = car.cs_right.readLightIntensity('reflected');
+
+    col_left = car.cs_left.readColor();
+    col_right = car.cs_right.readColor();
+
+    distance = car.sonic.readDistance();
+    
+    fprintf("intensities: left - %d, right - %d", int_left, int_right);
+    disp(int_left);
+    disp(int_right);
+    disp(col_left);
+    disp(col_right);
+    disp(distance);
+    
+    [col_left, col_right] = car.GetLightSensorsColors();
+    disp(col_left);
+    disp(col_right);
+    
+    distance = car.
+end

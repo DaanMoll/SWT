@@ -1,0 +1,12 @@
+init_car()
+
+disp("Place car on the parking fork so that left sensor points to left road and right sensor points to the right road");
+direction = car.CheckParkDirection();
+
+if strcmp(err, "None")
+    disp("Script terminated succesfully");
+    disp("Unoccupied parking place is");
+else
+    disp("Error");
+    disp(err);
+end

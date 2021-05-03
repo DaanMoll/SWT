@@ -1,0 +1,5 @@
+init_car()
+
+disp("Place car on purple area (right before the parking fork) or on one of the parking roads");
+err = car.DriveUntilDoubleBlack();
+if s
