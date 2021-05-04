@@ -5,11 +5,11 @@ red = 80;
 white = 98;
 
 tests =  {
-        black, black, 0;
         gray, gray, 1;
         purple, purple, -1;
         red, red, 2;
         white, white, 3;
+        black, black, 0;
         gray, red, 0;
         purple, white, 0;
         };

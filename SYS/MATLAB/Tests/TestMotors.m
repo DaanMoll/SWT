@@ -29,4 +29,37 @@ pause(1);
 car.m_left.stop();
 car.m_right.stop();
 
+disp("Both motors slow");
+pause(0.5);
+
+car.m_left.Speed = 10;
+car.m_right.Speed = 10;
+car.m_left.start();
+car.m_right.start();
+pause(1);
+car.m_left.stop();
+car.m_right.stop();
+
+disp("Both motors fast");
+pause(0.5);
+
+car.m_left.Speed = 30;
+car.m_right.Speed = 30;
+car.m_left.start();
+car.m_right.start();
+pause(1);
+car.m_left.stop();
+car.m_right.stop();
+
+disp("Both motors opposite");
+pause(0.5);
+
+car.m_left.Speed = -20;
+car.m_right.Speed = -20;
+car.m_left.start();
+car.m_right.start();
+pause(1);
+car.m_left.stop();
+car.m_right.stop();
+
 disp("End of test");
