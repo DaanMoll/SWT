@@ -120,6 +120,13 @@ classdef LegoCar < handle
             obj.UpdateMotors();
             
             while true
+                distance = obj.ReadDistance();
+                
+                if distance < 10
+                    err = "Obstacle in front of me!";
+                    break
+                end
+                
                 [int_left, int_right] = obj.GetLightSensorsIntensities();
 
                 speed_color = GetUnderlyingColor(int_left, int_right);
@@ -170,6 +177,13 @@ classdef LegoCar < handle
             obj.Start();
             
             while true
+                distance = obj.ReadDistance();
+                
+                if distance < 10
+                    err = "Obstacle in front of me!";
+                    break
+                end
+                
                 [int_left, int_right] = obj.GetLightSensorsIntensities();
 
                 if CheckBothColorsBlack(int_left, int_right)
