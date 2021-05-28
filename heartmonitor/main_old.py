@@ -96,6 +96,16 @@ def oxygen(number):
     elif number <= 10:
         print("WARNING!!! The oxygen level in the body is extremely low!! The patient might be dying! Seek immediate medical attention!!")
 
+def fix_monitor():
+    counter = 1
+    while counter == 1:
+        print("The sensor gives wrong data and seems to be broken.")
+        fixed = input("Type 'fixed' in order for it to be considered fixed.")
+        if fixed.__contains__("fixed"):
+            counter = 0
+            print()    
+    return counter
+
 
 def ask_input():
     print()
@@ -118,22 +128,24 @@ def ask_input():
             if pulseint > 300:
                 pulse = ""
                 print("The pulse should be a positive integer number equal or smaller than 300.")
-                counter = counter + 1
-                while counter == 1:
-                    print("The sensor gives wrong data and seems to be broken.")
-                    fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                    if fixed.__contains__("fixed"):
-                        counter = 0
-                        print()
+                fix_monitor()
+                # counter = counter + 1
+                # while counter == 1:
+                #     print("The sensor gives wrong data and seems to be broken.")
+                #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
+                #     if fixed.__contains__("fixed"):
+                #         counter = 0
+                #         print()
         else:
             print("The pulse should be a positive integer number equal or smaller than 300.")
-            counter = counter + 1
-            while counter == 1:
-                print("The sensor gives wrong data and seems to be broken.")
-                fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                if fixed.__contains__("fixed"):
-                    counter = 0
-                    print()
+            fix_monitor()
+            # counter = counter + 1
+            # while counter == 1:
+            #     print("The sensor gives wrong data and seems to be broken.")
+            #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
+            #     if fixed.__contains__("fixed"):
+            #         counter = 0
+            #         print()
 
     pulse = int(pulse)
 
@@ -149,22 +161,24 @@ def ask_input():
             if o2int > 100:
                 o2 = ""
                 print("The oxygen number should be a positive integer number equal or smaller than 100.")
-                counter = counter + 1
-                while counter == 1:
-                    print("The sensor gives wrong data and seems to be broken.")
-                    fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                    if fixed.__contains__("fixed"):
-                        counter = 0
-                        print()
+                fix_monitor()
+                # counter = counter + 1
+                # while counter == 1:
+                #     print("The sensor gives wrong data and seems to be broken.")
+                #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
+                #     if fixed.__contains__("fixed"):
+                #         counter = 0
+                #         print()
         else:
             print("The oxygen number should be a positive integer number equal or smaller than 100.")
-            counter = counter + 1
-            while counter == 1:
-                print("The sensor gives wrong data and seems to be broken.")
-                fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                if fixed.__contains__("fixed"):
-                    counter = 0
-                    print()
+            fix_monitor()
+            # counter = counter + 1
+            # while counter == 1:
+            #     print("The sensor gives wrong data and seems to be broken.")
+            #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
+            #     if fixed.__contains__("fixed"):
+            #         counter = 0
+            #         print()
 
     o2 = int(o2)
 
@@ -187,44 +201,48 @@ def ask_input():
                 if first <= second or first < 0 or second < 0:
                     blood_p = ""
                     print("The systolic blood pressure has to be higher than the diastolic blood pressure")
-                    counter = counter + 1
-                    while counter == 1:
-                        print("The sensor gives wrong data and seems to be broken.")
-                        fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                        if fixed.__contains__("fixed"):
-                            counter = 0
-                            print()
+                    fix_monitor()
+                    # counter = counter + 1
+                    # while counter == 1:
+                    #     print("The sensor gives wrong data and seems to be broken.")
+                    #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
+                    #     if fixed.__contains__("fixed"):
+                    #         counter = 0
+                    #         print()
                 #Check if the first number is smaller than 370 and the second number smaller than 360
                 elif first > 370 or second > 360:
                     blood_p = ""
                     print("The systolic blood pressure cannot be higher than 370 or the diastolic blood pressure cannot be higher than 360.")
-                    counter = counter + 1
-                    while counter == 1:
-                        print("The sensor gives wrong data and seems to be broken.")
-                        fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                        if fixed.__contains__("fixed"):
-                            counter = 0
-                            print()
+                    fix_monitor()
+                    # counter = counter + 1
+                    # while counter == 1:
+                    #     print("The sensor gives wrong data and seems to be broken.")
+                    #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
+                    #     if fixed.__contains__("fixed"):
+                    #         counter = 0
+                    #         print()
             else:
                 blood_p = ""
                 print("The blood pressure should be positive numbers")
-                counter = counter + 1
-                while counter == 1:
-                    print("The sensor gives wrong data and seems to be broken.")
-                    fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                    if fixed.__contains__("fixed"):
-                        counter = 0
-                        print()
+                fix_monitor()
+                # counter = counter + 1
+                # while counter == 1:
+                #     print("The sensor gives wrong data and seems to be broken.")
+                #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
+                #     if fixed.__contains__("fixed"):
+                #         counter = 0
+                #         print()
         else:
             print(
                 "The blood pressure should be entered as two positive numbers with a dash '/' between them. e.g. 120/80")
-            counter = counter + 1
-            while counter == 1:
-                print("The sensor gives wrong data and seems to be broken.")
-                fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                if fixed.__contains__("fixed"):
-                    counter = 0
-                    print()
+            fix_monitor()
+            # counter = counter + 1
+            # while counter == 1:
+            #     print("The sensor gives wrong data and seems to be broken.")
+            #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
+            #     if fixed.__contains__("fixed"):
+            #         counter = 0
+            #         print()
 
     print()
 
