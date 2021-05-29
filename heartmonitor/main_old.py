@@ -96,6 +96,7 @@ def oxygen(number):
     elif number <= 10:
         print("WARNING!!! The oxygen level in the body is extremely low!! The patient might be dying! Seek immediate medical attention!!")
 
+
 def fix_monitor():
     counter = 1
     while counter == 1:
@@ -106,155 +107,89 @@ def fix_monitor():
             print()    
     return counter
 
-
-def ask_input():
-    print()
-    print("In order to exit the program type q or quit")
-    print()
-
-    stop = ["q", "quit"]
-
-    counter = 0
-
+def input_pulse():
     pulse = ""
     while not (pulse.isnumeric()):
         pulse = input("Enter heart rate per minute, (e.g. 70): ")
-
         if pulse.lower() in stop:
-            return False
-
+            return 'quit'
         if pulse.isnumeric():
             pulseint = int(pulse)
             if pulseint > 300:
                 pulse = ""
                 print("The pulse should be a positive integer number equal or smaller than 300.")
                 fix_monitor()
-                # counter = counter + 1
-                # while counter == 1:
-                #     print("The sensor gives wrong data and seems to be broken.")
-                #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                #     if fixed.__contains__("fixed"):
-                #         counter = 0
-                #         print()
         else:
             print("The pulse should be a positive integer number equal or smaller than 300.")
             fix_monitor()
-            # counter = counter + 1
-            # while counter == 1:
-            #     print("The sensor gives wrong data and seems to be broken.")
-            #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
-            #     if fixed.__contains__("fixed"):
-            #         counter = 0
-            #         print()
+    return int(pulse)
 
-    pulse = int(pulse)
-
+def input_oxygen():
     o2 = ""
     while not (o2.isnumeric()):
         o2 = input("Enter Oxygen level in percentages (e.g. 96): ")
-
         if o2.lower() in stop:
-            return False
-
+            return 'quit'
         if o2.isnumeric():
             o2int = int(o2)
             if o2int > 100:
                 o2 = ""
                 print("The oxygen number should be a positive integer number equal or smaller than 100.")
                 fix_monitor()
-                # counter = counter + 1
-                # while counter == 1:
-                #     print("The sensor gives wrong data and seems to be broken.")
-                #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                #     if fixed.__contains__("fixed"):
-                #         counter = 0
-                #         print()
         else:
             print("The oxygen number should be a positive integer number equal or smaller than 100.")
             fix_monitor()
-            # counter = counter + 1
-            # while counter == 1:
-            #     print("The sensor gives wrong data and seems to be broken.")
-            #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
-            #     if fixed.__contains__("fixed"):
-            #         counter = 0
-            #         print()
+    return int(o2)
 
-    o2 = int(o2)
-
+def input_bp():
     blood_p = ""
     while not (blood_p.__contains__("/")):
         blood_p = input("Enter blood pressure (e.g. 120/80): ")
-
         if blood_p.lower() in stop:
-            return False
-
+            return 'quit'
         if blood_p.__contains__("/"):
             numbers = blood_p.split("/")
             first = numbers[0]
             second = numbers[1]
-
             if first.isnumeric() and second.isnumeric():
                 first = int(first)
                 second = int(second)
-                # Check that the first number is higher than the second
                 if first <= second or first < 0 or second < 0:
                     blood_p = ""
                     print("The systolic blood pressure has to be higher than the diastolic blood pressure")
                     fix_monitor()
-                    # counter = counter + 1
-                    # while counter == 1:
-                    #     print("The sensor gives wrong data and seems to be broken.")
-                    #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                    #     if fixed.__contains__("fixed"):
-                    #         counter = 0
-                    #         print()
-                #Check if the first number is smaller than 370 and the second number smaller than 360
                 elif first > 370 or second > 360:
                     blood_p = ""
                     print("The systolic blood pressure cannot be higher than 370 or the diastolic blood pressure cannot be higher than 360.")
                     fix_monitor()
-                    # counter = counter + 1
-                    # while counter == 1:
-                    #     print("The sensor gives wrong data and seems to be broken.")
-                    #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                    #     if fixed.__contains__("fixed"):
-                    #         counter = 0
-                    #         print()
             else:
                 blood_p = ""
                 print("The blood pressure should be positive numbers")
                 fix_monitor()
-                # counter = counter + 1
-                # while counter == 1:
-                #     print("The sensor gives wrong data and seems to be broken.")
-                #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
-                #     if fixed.__contains__("fixed"):
-                #         counter = 0
-                #         print()
         else:
             print(
                 "The blood pressure should be entered as two positive numbers with a dash '/' between them. e.g. 120/80")
             fix_monitor()
-            # counter = counter + 1
-            # while counter == 1:
-            #     print("The sensor gives wrong data and seems to be broken.")
-            #     fixed = input("Type 'fixed' in order for it to be considered fixed.")
-            #     if fixed.__contains__("fixed"):
-            #         counter = 0
-            #         print()
+    return blood_p
 
+stop = ["q", "quit"]
+
+def ask_input():
     print()
-
+    print("In order to exit the program type q or quit")
+    print()
+    pulse = input_pulse()
+    if (pulse == 'quit'): return False
+    o2 = input_oxygen()
+    if (o2 == 'quit'): return False
+    blood_p = input_bp()
+    if (blood_p == 'quit'): return False
+    print()
     heart(pulse)
-
     oxygen(o2)
-
     blood_pressure(blood_p)
-
     print()
     return True
-
 
 if __name__ == '__main__':
     print(
